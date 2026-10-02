@@ -1,0 +1,13 @@
+{
+  "name": "tsukikage-riichi",
+  "version": "3.0.0",
+  "private": true,
+  "description": "Offline four-player riichi mahjong: one human and three heuristic CPUs.",
+  "main": "src/engine.js",
+  "scripts": {
+    "test": "node tests/unit.js && node tests/v3.js && node tests/simulation.js && node tests/matches.js",
+    "test:unit": "node tests/unit.js",
+    "test:simulation": "node tests/simulation.js"
+  },
+  "license": "MIT"
+}

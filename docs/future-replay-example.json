@@ -1,0 +1,16 @@
+{
+  "status": "design-example-not-an-actual-played-record",
+  "schema": 1,
+  "seed": 12345,
+  "rulesVersion": "tsukikage-local-v3",
+  "commands": [{"seq": 1, "seat": 0, "kind": "discard", "tileId": 17}],
+  "events": [{
+    "sessionId": "example-only",
+    "hand": 1,
+    "seq": 1,
+    "rulesVersion": "tsukikage-local-v3",
+    "kind": "discard",
+    "payload": {"i": 0, "id": 17, "riichi": false},
+    "visibility": "public"
+  }]
+}

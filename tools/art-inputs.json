@@ -1,0 +1,26 @@
+[
+  {
+    "id": "hina",
+    "base": "assets/characters/hina/base-original.png",
+    "sheet": "assets/characters/hina/expressions-original.png",
+    "cutin": "assets/characters/hina/cutin-original.png"
+  },
+  {
+    "id": "akane",
+    "base": "assets/characters/akane/base-original.png",
+    "sheet": "assets/characters/akane/expressions-original.png",
+    "cutin": "assets/characters/akane/cutin-original.png"
+  },
+  {
+    "id": "shizuku",
+    "base": "assets/characters/shizuku/base-original.png",
+    "sheet": "assets/characters/shizuku/expressions-original.png",
+    "cutin": "assets/characters/shizuku/cutin-original.png"
+  },
+  {
+    "id": "koharu",
+    "base": "assets/characters/koharu/base-original.png",
+    "sheet": "assets/characters/koharu/expressions-original.png",
+    "cutin": "assets/characters/koharu/cutin-original.png"
+  }
+]

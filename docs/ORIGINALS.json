@@ -1,0 +1,32 @@
+{
+  "userFiles": [
+    {
+      "name": "tsukikage-riichi-v3-prompt-kit.zip",
+      "bytes": 199020,
+      "sha256": "0333d86a6faf3cf2f8c417d9c851b379d0d6420cb6a7c3b863fe1aa6dd42328c"
+    },
+    {
+      "name": "tsukikage-riichi-v3-improvement-prompt-ko.md",
+      "bytes": 35429,
+      "sha256": "cad1b9f7593731b4f653c0a1fc59530543b4ee414fde0473aaa699159fb07db0"
+    },
+    {
+      "name": "tsukikage-riichi-v2.html",
+      "bytes": 165164,
+      "sha256": "69ea14f38f2e8678e97d74e2c9e39d3448e003b546e7fbe3a21986f9854dadc5"
+    }
+  ],
+  "baselineFiles": [
+    {
+      "name": "tsukikage-riichi-v2.html",
+      "sha256": "69ea14f38f2e8678e97d74e2c9e39d3448e003b546e7fbe3a21986f9854dadc5",
+      "matchesPackage": true
+    },
+    {
+      "name": "tsukikage-riichi-v2-source.zip",
+      "sha256": "22f1563c11c4f848d6f2788522e843eac7c21cad8a8069bc47de4c340a07a22c",
+      "matchesPackage": true
+    }
+  ]
+}
+

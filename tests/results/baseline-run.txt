@@ -1,0 +1,63 @@
+PASS 136 identities / 34 types / exactly three red tiles
+PASS Dora cycles for all suits, winds and dragons
+PASS Standard shanten and multiple-sided waits
+PASS Seven pairs and thirteen orphans shanten
+PASS A quad cannot substitute for two pairs in chiitoitsu
+PASS Pinfu ron: 1 han 30 fu, nondealer 1000
+PASS Pinfu tsumo: 2 han 20 fu, 400 / 700
+PASS Riichi ippatsu add two han; double riichi replaces ordinary riichi
+PASS No yaku: structurally complete closed ron is rejected
+PASS Dora without a yaku cannot qualify a hand
+PASS Dora and ura only add after a real yaku
+PASS Open tanyao allowed, open pinfu not awarded
+PASS Double-wind pair contributes four fu
+PASS Double-wind triplet awards two yakuhai
+PASS Chiitoitsu exact 25 fu with honroutou
+PASS Kokushi regular and double thirteen-sided wait
+PASS Suuankou tsumo / ron tanki; ron shanpon is only sanankou
+PASS Three dragons and all honors stack yakuman
+PASS Pure nine gates is double yakuman
+PASS Seven-pairs all-green is rejected when nonexistent
+PASS Sanshoku / ittsuu / closed straight shape
+PASS Junchan and ryanpeikou do not double-count chanta / iipeikou
+PASS Limit scoring at mangan / haneman / baiman / sanbaiman / kazoe
+PASS Chi only from the left player; pon from any other seat
+PASS Discard furiten covers every winning tile, not just the discarded wait
+PASS Riichi requires closed tenpai, 1000 points and four live tiles
+PASS Riichi declaration is not charged until discard survives ron
+PASS Ankan consumes one live tile, flips dora, preserves 136 identities
+PASS Tile identity zero is a valid drawn tile for ankan
+PASS Riichi closed kan can preserve both waits and decompositions
+PASS Points and tile integrity after a seeded hand
+PASS Double ron pays both winners and conserves points
+PASS Ron on a riichi declaration cancels its 1000-point deposit
+PASS Passing a ron creates temporary furiten until the next draw
+PASS Passing a ron after riichi remains furiten after drawing
+PASS Robbing an added kan leaves the old pon and does not flip dora
+PASS Ankan does not give a regular hand a ron option or temporary furiten
+PASS Exhaustive draw transfers exactly 3000 among tenpai and noten players
+PASS CPU choice is unchanged when only hidden opponent tiles are swapped
+
+39 focused rule tests passed.
+Completed 20 hands 2815 ms
+Completed 40 hands 5766 ms
+Completed 60 hands 8414 ms
+Completed 80 hands 10709 ms
+Completed 100 hands 13527 ms
+{
+  "hands": 100,
+  "wins": 79,
+  "draws": 19,
+  "aborts": 2,
+  "riichi": 115,
+  "chi": 40,
+  "pon": 78,
+  "kan": 8,
+  "calls": 129,
+  "ron": 62,
+  "tsumo": 17,
+  "multipleRon": 0,
+  "steps": 10032,
+  "elapsedMs": 13527
+}
+

@@ -1,0 +1,36 @@
+{
+  "runAt": "2026-10-02T13:31:04+0900",
+  "browser": "isolated Chromium CDP",
+  "checks": [
+    {
+      "name": "saved hand wall score and RNG restore",
+      "passed": true,
+      "details": null
+    },
+    {
+      "name": "independent preferences persist",
+      "passed": true,
+      "details": null
+    },
+    {
+      "name": "v1 automatic discard does not migrate on",
+      "passed": true,
+      "details": null
+    },
+    {
+      "name": "v1 game migration preserves original key",
+      "passed": true,
+      "details": null
+    },
+    {
+      "name": "invalid save rejected with original retained",
+      "passed": true,
+      "details": null
+    },
+    {
+      "name": "storage denial leaves playable hand",
+      "passed": true,
+      "details": null
+    }
+  ]
+}

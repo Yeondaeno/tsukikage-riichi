@@ -1,0 +1,31 @@
+{
+  "runAt": "2026-10-02T13:30:52+0900",
+  "browser": "isolated Chromium CDP; touch is emulated",
+  "checks": [
+    {
+      "name": "CPU concealed banks contain no face identities",
+      "passed": true,
+      "details": null
+    },
+    {
+      "name": "wall exposes only active indicator faces",
+      "passed": true,
+      "details": null
+    },
+    {
+      "name": "all production character images load",
+      "passed": true,
+      "details": null
+    },
+    {
+      "name": "riichi auto starts disabled",
+      "passed": true,
+      "details": null
+    },
+    {
+      "name": "normal snapshot contains no hidden wall or CPU hands",
+      "passed": true,
+      "details": null
+    }
+  ]
+}

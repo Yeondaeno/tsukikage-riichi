@@ -1,0 +1,156 @@
+{
+  "runAt": "2026-10-02T13:30:59+0900",
+  "browser": "isolated Chromium CDP",
+  "checks": [
+    {
+      "name": "phase 0 becomes observable",
+      "passed": true,
+      "details": null
+    },
+    {
+      "name": "skip at phase 0 cleans up once",
+      "passed": true,
+      "details": null
+    },
+    {
+      "name": "phase 0 preview preserves state",
+      "passed": true,
+      "details": null
+    },
+    {
+      "name": "phase 1 becomes observable",
+      "passed": true,
+      "details": null
+    },
+    {
+      "name": "skip at phase 1 cleans up once",
+      "passed": true,
+      "details": null
+    },
+    {
+      "name": "phase 1 preview preserves state",
+      "passed": true,
+      "details": null
+    },
+    {
+      "name": "phase 2 becomes observable",
+      "passed": true,
+      "details": null
+    },
+    {
+      "name": "skip at phase 2 cleans up once",
+      "passed": true,
+      "details": null
+    },
+    {
+      "name": "phase 2 preview preserves state",
+      "passed": true,
+      "details": null
+    },
+    {
+      "name": "phase 3 becomes observable",
+      "passed": true,
+      "details": null
+    },
+    {
+      "name": "skip at phase 3 cleans up once",
+      "passed": true,
+      "details": null
+    },
+    {
+      "name": "phase 3 preview preserves state",
+      "passed": true,
+      "details": null
+    },
+    {
+      "name": "phase 4 becomes observable",
+      "passed": true,
+      "details": null
+    },
+    {
+      "name": "skip at phase 4 cleans up once",
+      "passed": true,
+      "details": null
+    },
+    {
+      "name": "phase 4 preview preserves state",
+      "passed": true,
+      "details": null
+    },
+    {
+      "name": "legal preview mangan",
+      "passed": true,
+      "details": {
+        "tier": "mangan",
+        "han": 5,
+        "limit": "만관",
+        "unique": 1,
+        "count": 1
+      }
+    },
+    {
+      "name": "legal preview haneman",
+      "passed": true,
+      "details": {
+        "tier": "haneman",
+        "han": 6,
+        "limit": "하네만",
+        "unique": 2,
+        "count": 2
+      }
+    },
+    {
+      "name": "legal preview baiman",
+      "passed": true,
+      "details": {
+        "tier": "baiman",
+        "han": 8,
+        "limit": "배만",
+        "unique": 3,
+        "count": 3
+      }
+    },
+    {
+      "name": "legal preview sanbaiman",
+      "passed": true,
+      "details": {
+        "tier": "sanbaiman",
+        "han": 11,
+        "limit": "삼배만",
+        "unique": 5,
+        "count": 5
+      }
+    },
+    {
+      "name": "legal preview yakuman",
+      "passed": true,
+      "details": {
+        "tier": "yakuman",
+        "han": 0,
+        "limit": "2배 역만",
+        "unique": 0,
+        "count": 0
+      }
+    },
+    {
+      "name": "double ron first winner shown",
+      "passed": true,
+      "details": null
+    },
+    {
+      "name": "double ron second winner shown",
+      "passed": true,
+      "details": null
+    },
+    {
+      "name": "double ron has both details and one settlement",
+      "passed": true,
+      "details": null
+    },
+    {
+      "name": "called riichi tile retains sideways slot and badge",
+      "passed": true,
+      "details": null
+    }
+  ]
+}

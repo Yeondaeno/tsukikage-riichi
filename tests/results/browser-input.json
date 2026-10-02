@@ -1,0 +1,46 @@
+{
+  "runAt": "2026-10-02T13:30:46+0900",
+  "browser": "isolated Chromium CDP; touch is emulated",
+  "checks": [
+    {
+      "name": "first click selects without discarding",
+      "passed": true,
+      "details": null
+    },
+    {
+      "name": "another identical-type tile only changes selection",
+      "passed": true,
+      "details": null
+    },
+    {
+      "name": "same physical tile re-click without timing limit discards once",
+      "passed": true,
+      "details": null
+    },
+    {
+      "name": "valid drag discards once and removes ghost",
+      "passed": true,
+      "details": null
+    },
+    {
+      "name": "outside drop cancels",
+      "passed": true,
+      "details": null
+    },
+    {
+      "name": "pointer cancellation prevents discard",
+      "passed": true,
+      "details": null
+    },
+    {
+      "name": "two real touch events discard once",
+      "passed": true,
+      "details": null
+    },
+    {
+      "name": "riichi Enter without selection does not discard",
+      "passed": true,
+      "details": null
+    }
+  ]
+}

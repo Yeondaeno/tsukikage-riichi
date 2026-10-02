@@ -1,0 +1,80 @@
+<!doctype html>
+<html lang="ko">
+<head>
+<meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1,viewport-fit=cover">
+<meta name="theme-color" content="#0d211e"><meta name="description" content="플레이어 1명과 CPU 3명이 함께하는 오프라인 4인 리치마작. 소재 폴더와 함께 제공되는 정적 웹게임입니다.">
+<title>월영마작 03 · 달빛 리치 클럽</title>
+<style>
+/*__CSS__*/
+/*__FX_CSS__*/
+/*__V3_CSS__*/
+/*__SCENE_CSS__*/
+/*__LAYOUT_CSS__*/
+/*__MOBILE_CSS__*/
+</style>
+</head>
+<body>
+<a href="#handRow" class="skip-link">내 손패로 이동</a>
+<div class="app">
+<header class="topbar">
+ <div class="brand"><div class="brand-mark">月</div><div><h1>월영마작 <span>TSUKIKAGE</span></h1><p>한 수의 고요함, 화료의 찬란함.</p></div></div>
+ <div class="top-actions"><span class="offline-badge"><i></i> OFFLINE TABLE</span><button class="icon-btn" id="soundBtn" title="효과음 켜기" aria-label="효과음 켜기"></button><button class="icon-btn" id="fullscreenBtn" title="전체 화면" aria-label="전체 화면"></button><button class="soft-btn" id="helpBtn">규칙 안내 <span>?</span></button><button class="icon-btn" id="settingsBtn" title="설정" aria-label="설정"></button></div>
+</header>
+<main class="workspace">
+ <section class="game-panel" aria-label="4인 리치마작 대국판">
+  <div class="table-toolbar"><div class="table-meta"><span class="live-dot"></span><strong id="modeLabel">동풍전</strong><span class="toolbar-divider"></span><span id="roundLabel">동 1국 · 0본장</span></div><div class="toolbar-actions"><button id="designBtn" class="text-btn">패·연출</button><button id="pauseBtn" class="text-btn">일시정지</button><button id="newBtn" class="text-btn">새 대국 ↗</button></div></div>
+  <div class="stage-shell" id="stageShell"><div class="stage" id="stage">
+   <section class="wall-hud" id="wallHud" aria-label="왕패와 도라 표시패"></section><div class="felt-lines"></div><div class="table-stamp">月 影<br><small>RIICHI MAHJONG</small></div>
+   <div class="seat-card north" id="seat2"></div><div class="seat-card east" id="seat1"></div><div class="seat-card west" id="seat3"></div>
+   <div class="opponent-bank bank2" id="bank2"></div><div class="opponent-bank bank1" id="bank1"></div><div class="opponent-bank bank3" id="bank3"></div>
+   <div class="river river0" id="river0" aria-label="내 버림패"></div><div class="river river1" id="river1" aria-label="하루의 버림패"></div><div class="river river2" id="river2" aria-label="렌의 버림패"></div><div class="river river3" id="river3" aria-label="유키의 버림패"></div>
+   <div class="center-board" id="centerBoard"></div>
+   <div class="compass compass0" id="compass0"></div><div class="compass compass1" id="compass1"></div><div class="compass compass2" id="compass2"></div><div class="compass compass3" id="compass3"></div>
+   <div class="table-bottom-note"><span class="tiny-mark">四</span> 4인 리치마작 <span>·</span> 당신과 CPU 3명</div>
+   <div class="table-rule-note">25,000점 시작 <span>·</span> 적도라 <b id="akaLabel">ON</b></div>
+   <div class="call-toast" id="callToast" aria-live="polite"></div>
+   <div class="discard-zone" id="discardZone" aria-label="버릴 패를 놓는 영역">패를 이곳에 놓기</div>
+   <div class="pause-cover" id="pauseCover" hidden><div class="pause-symbol">Ⅱ</div><h2>잠시, 숨 고르기</h2><p>대국이 일시정지되었습니다.</p><button class="primary-btn" id="resumePauseBtn">대국 계속하기</button></div>
+  </div></div>
+  <div class="hand-dock">
+   <div class="hand-heading"><div class="player-self" id="selfInfo"></div><div class="hand-controls"><button class="text-btn current-guide-btn" data-act="request-guide">내 패 설명</button><span id="handStatus" class="status-chip"></span><label class="mini-toggle"><input type="checkbox" id="autoWin" checked><span>화료 알림</span></label></div></div>
+   <div id="callChoice" class="call-choice" hidden></div>
+   <div class="hand-row" id="handRow" aria-label="내 손패"></div>
+   <div class="action-bar"><div class="turn-message" id="turnMessage" aria-live="polite"></div><div class="action-buttons" id="actionButtons"></div></div>
+  </div>
+ </section>
+ <aside class="sidebar">
+  <section class="ranking-panel" aria-label="현재 순위"><div class="section-title"><h2>현재 순위</h2><span class="micro-label" id="rankRound">EAST 1</span></div><div class="live-rank-list" id="rankList" role="list"></div><p class="rank-status" id="rankStatus"></p></section>
+  <section class="guide-panel">
+   <div class="section-title"><h2>대국 도우미</h2><label class="switch" title="패 추천과 대기패 안내"><input type="checkbox" id="hintToggle" checked><span></span></label></div>
+   <div id="guideContent"></div>
+  </section>
+  <section class="log-panel"><div class="section-title"><h2>대국 기록</h2><span class="micro-label">LIVE LOG</span></div><div id="logList" class="log-list" aria-label="대국 기록"></div></section>
+  <div class="keyboard-note"><span>패 클릭</span> 선택 <i>·</i> <kbd>Enter</kbd> 버리기<br><kbd>R</kbd> 리치 <i>·</i> <kbd>W</kbd> 화료 <i>·</i> <kbd>Esc</kbd> 취소 / 패스</div>
+ </aside>
+</main>
+<footer class="footer"><span><i class="footer-moon"></i> TSUKIKAGE RIICHI <b>03</b></span><span id="saveStatus">계정 없이 · 설치 없이 · 인터넷 없이</span></footer>
+</div>
+<div id="characterDialogue" class="character-dialogue" aria-live="polite" hidden></div>
+<div class="rotate-note" role="status">가로 화면에서 패가 더 잘 보여요. 설정은 상단에서 열 수 있습니다.</div>
+<div id="tileInspect" class="tile-inspect" hidden></div>
+<section id="winScene" class="win-scene" role="dialog" aria-modal="true" aria-labelledby="winSceneTitle" hidden></section>
+<div id="modal" class="modal-backdrop" hidden><section class="modal-card" id="modalCard" role="dialog" aria-modal="true" aria-labelledby="modalTitle" tabindex="-1"></section></div>
+<div id="notice" class="notice" role="status"></div>
+<noscript><div class="noscript">이 게임을 실행하려면 브라우저의 JavaScript를 켜 주세요.</div></noscript>
+<script>
+/*__POLICY__*/
+/*__CHARACTERS__*/
+/*__INPUT__*/
+</script>
+<script>
+/*__ENGINE__*/
+</script>
+<script>
+/*__VISUALS__*/
+</script>
+<script>
+/*__APP__*/
+</script>
+</body>
+</html>

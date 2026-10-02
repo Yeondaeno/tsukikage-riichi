@@ -1,0 +1,221 @@
+{
+  "runAt": "2026-10-02T13:31:19+0900",
+  "browser": "isolated Chromium CDP",
+  "checks": [
+    {
+      "name": "all forty production images load",
+      "passed": true,
+      "details": [
+        {
+          "src": "assets/characters/hina/base.webp",
+          "ok": true
+        },
+        {
+          "src": "assets/characters/hina/cutin.webp",
+          "ok": true
+        },
+        {
+          "src": "assets/characters/hina/special.webp",
+          "ok": true
+        },
+        {
+          "src": "assets/characters/hina/neutral.webp",
+          "ok": true
+        },
+        {
+          "src": "assets/characters/hina/smile.webp",
+          "ok": true
+        },
+        {
+          "src": "assets/characters/hina/thinking.webp",
+          "ok": true
+        },
+        {
+          "src": "assets/characters/hina/surprise.webp",
+          "ok": true
+        },
+        {
+          "src": "assets/characters/hina/riichi.webp",
+          "ok": true
+        },
+        {
+          "src": "assets/characters/hina/win.webp",
+          "ok": true
+        },
+        {
+          "src": "assets/characters/hina/loss.webp",
+          "ok": true
+        },
+        {
+          "src": "assets/characters/akane/base.webp",
+          "ok": true
+        },
+        {
+          "src": "assets/characters/akane/cutin.webp",
+          "ok": true
+        },
+        {
+          "src": "assets/characters/akane/special.webp",
+          "ok": true
+        },
+        {
+          "src": "assets/characters/akane/neutral.webp",
+          "ok": true
+        },
+        {
+          "src": "assets/characters/akane/smile.webp",
+          "ok": true
+        },
+        {
+          "src": "assets/characters/akane/thinking.webp",
+          "ok": true
+        },
+        {
+          "src": "assets/characters/akane/surprise.webp",
+          "ok": true
+        },
+        {
+          "src": "assets/characters/akane/riichi.webp",
+          "ok": true
+        },
+        {
+          "src": "assets/characters/akane/win.webp",
+          "ok": true
+        },
+        {
+          "src": "assets/characters/akane/loss.webp",
+          "ok": true
+        },
+        {
+          "src": "assets/characters/shizuku/base.webp",
+          "ok": true
+        },
+        {
+          "src": "assets/characters/shizuku/cutin.webp",
+          "ok": true
+        },
+        {
+          "src": "assets/characters/shizuku/special.webp",
+          "ok": true
+        },
+        {
+          "src": "assets/characters/shizuku/neutral.webp",
+          "ok": true
+        },
+        {
+          "src": "assets/characters/shizuku/smile.webp",
+          "ok": true
+        },
+        {
+          "src": "assets/characters/shizuku/thinking.webp",
+          "ok": true
+        },
+        {
+          "src": "assets/characters/shizuku/surprise.webp",
+          "ok": true
+        },
+        {
+          "src": "assets/characters/shizuku/riichi.webp",
+          "ok": true
+        },
+        {
+          "src": "assets/characters/shizuku/win.webp",
+          "ok": true
+        },
+        {
+          "src": "assets/characters/shizuku/loss.webp",
+          "ok": true
+        },
+        {
+          "src": "assets/characters/koharu/base.webp",
+          "ok": true
+        },
+        {
+          "src": "assets/characters/koharu/cutin.webp",
+          "ok": true
+        },
+        {
+          "src": "assets/characters/koharu/special.webp",
+          "ok": true
+        },
+        {
+          "src": "assets/characters/koharu/neutral.webp",
+          "ok": true
+        },
+        {
+          "src": "assets/characters/koharu/smile.webp",
+          "ok": true
+        },
+        {
+          "src": "assets/characters/koharu/thinking.webp",
+          "ok": true
+        },
+        {
+          "src": "assets/characters/koharu/surprise.webp",
+          "ok": true
+        },
+        {
+          "src": "assets/characters/koharu/riichi.webp",
+          "ok": true
+        },
+        {
+          "src": "assets/characters/koharu/win.webp",
+          "ok": true
+        },
+        {
+          "src": "assets/characters/koharu/loss.webp",
+          "ok": true
+        }
+      ]
+    },
+    {
+      "name": "seven WAV files decode with real durations",
+      "passed": true,
+      "details": [
+        {
+          "src": "assets/audio/tile.wav",
+          "duration": 0.43
+        },
+        {
+          "src": "assets/audio/select.wav",
+          "duration": 0.339958
+        },
+        {
+          "src": "assets/audio/riichi.wav",
+          "duration": 0.52
+        },
+        {
+          "src": "assets/audio/call.wav",
+          "duration": 0.43
+        },
+        {
+          "src": "assets/audio/win.wav",
+          "duration": 0.7
+        },
+        {
+          "src": "assets/audio/draw.wav",
+          "duration": 0.43
+        },
+        {
+          "src": "assets/audio/rank.wav",
+          "duration": 0.43
+        }
+      ]
+    },
+    {
+      "name": "background visibility event cancels CPU reservation",
+      "passed": true,
+      "details": null
+    },
+    {
+      "name": "return visibility event resumes CPU flow",
+      "passed": true,
+      "details": null
+    },
+    {
+      "name": "file URL build is playable with local images",
+      "passed": true,
+      "details": null
+    }
+  ]
+}

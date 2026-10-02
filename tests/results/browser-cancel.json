@@ -1,0 +1,61 @@
+{
+  "runAt": "2026-10-02T13:31:13+0900",
+  "browser": "isolated Chromium CDP",
+  "checks": [
+    {
+      "name": "resize starts real drag",
+      "passed": true,
+      "details": null
+    },
+    {
+      "name": "resize cancels without discard or ghost",
+      "passed": true,
+      "details": null
+    },
+    {
+      "name": "modal starts real drag",
+      "passed": true,
+      "details": null
+    },
+    {
+      "name": "modal cancels without discard or ghost",
+      "passed": true,
+      "details": null
+    },
+    {
+      "name": "turn starts real drag",
+      "passed": true,
+      "details": null
+    },
+    {
+      "name": "turn cancels without discard or ghost",
+      "passed": true,
+      "details": null
+    },
+    {
+      "name": "escape starts real drag",
+      "passed": true,
+      "details": null
+    },
+    {
+      "name": "escape cancels without discard or ghost",
+      "passed": true,
+      "details": null
+    },
+    {
+      "name": "blur starts real drag",
+      "passed": true,
+      "details": null
+    },
+    {
+      "name": "blur cancels without discard or ghost",
+      "passed": true,
+      "details": null
+    },
+    {
+      "name": "portrait suggests rotation and settings stay accessible",
+      "passed": true,
+      "details": null
+    }
+  ]
+}

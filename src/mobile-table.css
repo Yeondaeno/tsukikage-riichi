@@ -1,0 +1,15 @@
+.skip-link{position:fixed;top:-60px;left:16px;background:#ffedbb;color:#123b2c;padding:8px;z-index:100}.skip-link:focus{top:8px}.preview-choices{display:flex;flex-wrap:wrap;gap:12px;font-size:11px;margin-top:12px}.preview-choices select{background:#224b3e;color:#fff9dc;border:1px solid #c3d8b850;border-radius:6px;padding:5px}.current-guide-btn{font-size:10px;border:1px solid #c1d7b930;border-radius:6px;padding:4px 7px}
+@media(max-width:999px) and (orientation:landscape){
+ .seat-card.west{left:178px;top:5px}.seat-card.north{left:305px;top:5px;transform:none}.seat-card.east{left:432px;right:auto;top:5px}.seat-card{min-width:112px}
+ .center-board{right:8px;left:auto;top:5px;transform:none;width:80px;height:54px;padding:2px}.center-top{height:17px}.center-top .round-kanji{font-size:14px}.center-counters{height:12px}.center-live{height:16px}.center-turn{display:none}
+ .river0,.river1,.river2,.river3{top:68px;transform:translateX(-50%)}.river3{left:calc(50% - 210px)}.river2{left:calc(50% - 70px)}.river1{left:calc(50% + 70px)}.river0{left:calc(50% + 210px)}
+ .river:before{position:absolute;top:-13px;left:0;font-size:8px;color:#e4f0d7;letter-spacing:.2px;white-space:nowrap}.river3:before{content:'코하루 · 버림패'}.river2:before{content:'시즈쿠 · 버림패'}.river1:before{content:'아카네 · 버림패'}.river0:before{content:'히나 · 내 버림패'}
+ .stage:has(.river-row:nth-child(5)) .river .tile.small{width:17px;height:22px}.stage:has(.river-row:nth-child(5)) .river-slot{width:17px;height:22px}.stage:has(.river-row:nth-child(5)) .river-slot.sideways-slot{width:22px}.stage:has(.river-row:nth-child(5)) .river-row{height:22px}
+ .discard-zone{left:35px;top:92px;bottom:auto;width:50px;height:58px;padding:5px;text-align:center;line-height:1.5;border-radius:9px}
+ .turn-message small{display:block;font-size:7px;line-height:1.15;margin:2px 0 0}.current-guide-btn{font-size:8px;padding:2px 5px}
+}
+
+.stage-shell{background-image:url('assets/table/felt.svg');background-size:cover}.tile.back{background-image:url('assets/table/tile-back.svg');background-size:100% 100%}.tile.back:after{background:none}.stick-flight{background:transparent url('assets/table/riichi-stick.svg') center/100% 100%;border:0}.stick-flight:after{display:none}
+.character-dialogue{top:12px;left:34%;bottom:auto;max-width:330px}.current-rank-chip{font-size:10px;color:#fceab6}
+[data-motion="short"] .scene-character{animation-duration:.12s}
+@media(max-width:999px) and (orientation:landscape){.character-dialogue{top:2px;left:155px;right:auto;bottom:auto;width:280px;max-width:280px;padding:2px 6px;gap:5px}.character-dialogue img{width:24px;height:28px}.character-dialogue strong{font-size:8px}.character-dialogue span{font-size:10px}}

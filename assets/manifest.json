@@ -1,0 +1,139 @@
+{
+  "version": 3,
+  "characters": [
+    {
+      "id": "hina",
+      "name": "츠키시로 히나",
+      "theme": "#b8e8ca",
+      "base": "assets/characters/hina/base.webp",
+      "portrait": "assets/characters/hina/neutral.webp",
+      "expressions": {
+        "neutral": "assets/characters/hina/neutral.webp",
+        "smile": "assets/characters/hina/smile.webp",
+        "thinking": "assets/characters/hina/thinking.webp",
+        "surprise": "assets/characters/hina/surprise.webp",
+        "riichi": "assets/characters/hina/riichi.webp",
+        "win": "assets/characters/hina/win.webp",
+        "loss": "assets/characters/hina/loss.webp"
+      },
+      "cutin": "assets/characters/hina/cutin.webp",
+      "special": "assets/characters/hina/special.webp",
+      "voice": null
+    },
+    {
+      "id": "akane",
+      "name": "아사히 아카네",
+      "theme": "#ffa88c",
+      "base": "assets/characters/akane/base.webp",
+      "portrait": "assets/characters/akane/neutral.webp",
+      "expressions": {
+        "neutral": "assets/characters/akane/neutral.webp",
+        "smile": "assets/characters/akane/smile.webp",
+        "thinking": "assets/characters/akane/thinking.webp",
+        "surprise": "assets/characters/akane/surprise.webp",
+        "riichi": "assets/characters/akane/riichi.webp",
+        "win": "assets/characters/akane/win.webp",
+        "loss": "assets/characters/akane/loss.webp"
+      },
+      "cutin": "assets/characters/akane/cutin.webp",
+      "special": "assets/characters/akane/special.webp",
+      "voice": null
+    },
+    {
+      "id": "shizuku",
+      "name": "미나세 시즈쿠",
+      "theme": "#b7d9fa",
+      "base": "assets/characters/shizuku/base.webp",
+      "portrait": "assets/characters/shizuku/neutral.webp",
+      "expressions": {
+        "neutral": "assets/characters/shizuku/neutral.webp",
+        "smile": "assets/characters/shizuku/smile.webp",
+        "thinking": "assets/characters/shizuku/thinking.webp",
+        "surprise": "assets/characters/shizuku/surprise.webp",
+        "riichi": "assets/characters/shizuku/riichi.webp",
+        "win": "assets/characters/shizuku/win.webp",
+        "loss": "assets/characters/shizuku/loss.webp"
+      },
+      "cutin": "assets/characters/shizuku/cutin.webp",
+      "special": "assets/characters/shizuku/special.webp",
+      "voice": null
+    },
+    {
+      "id": "koharu",
+      "name": "하나모리 코하루",
+      "theme": "#efc8d5",
+      "base": "assets/characters/koharu/base.webp",
+      "portrait": "assets/characters/koharu/neutral.webp",
+      "expressions": {
+        "neutral": "assets/characters/koharu/neutral.webp",
+        "smile": "assets/characters/koharu/smile.webp",
+        "thinking": "assets/characters/koharu/thinking.webp",
+        "surprise": "assets/characters/koharu/surprise.webp",
+        "riichi": "assets/characters/koharu/riichi.webp",
+        "win": "assets/characters/koharu/win.webp",
+        "loss": "assets/characters/koharu/loss.webp"
+      },
+      "cutin": "assets/characters/koharu/cutin.webp",
+      "special": "assets/characters/koharu/special.webp",
+      "voice": null
+    }
+  ],
+  "audio": {
+    "tile": "assets/audio/tile.wav",
+    "select": "assets/audio/select.wav",
+    "riichi": "assets/audio/riichi.wav",
+    "call": "assets/audio/call.wav",
+    "win": "assets/audio/win.wav",
+    "draw": "assets/audio/draw.wav",
+    "rank": "assets/audio/rank.wav"
+  },
+  "tiles": [
+    "assets/tiles/00.svg",
+    "assets/tiles/01.svg",
+    "assets/tiles/02.svg",
+    "assets/tiles/03.svg",
+    "assets/tiles/04.svg",
+    "assets/tiles/05.svg",
+    "assets/tiles/06.svg",
+    "assets/tiles/07.svg",
+    "assets/tiles/08.svg",
+    "assets/tiles/09.svg",
+    "assets/tiles/10.svg",
+    "assets/tiles/11.svg",
+    "assets/tiles/12.svg",
+    "assets/tiles/13.svg",
+    "assets/tiles/14.svg",
+    "assets/tiles/15.svg",
+    "assets/tiles/16.svg",
+    "assets/tiles/17.svg",
+    "assets/tiles/18.svg",
+    "assets/tiles/19.svg",
+    "assets/tiles/20.svg",
+    "assets/tiles/21.svg",
+    "assets/tiles/22.svg",
+    "assets/tiles/23.svg",
+    "assets/tiles/24.svg",
+    "assets/tiles/25.svg",
+    "assets/tiles/26.svg",
+    "assets/tiles/27.svg",
+    "assets/tiles/28.svg",
+    "assets/tiles/29.svg",
+    "assets/tiles/30.svg",
+    "assets/tiles/31.svg",
+    "assets/tiles/32.svg",
+    "assets/tiles/33.svg",
+    "assets/tiles/red-16.svg",
+    "assets/tiles/red-52.svg",
+    "assets/tiles/red-88.svg"
+  ],
+  "table": [
+    "assets/table/felt.svg",
+    "assets/table/riichi-stick.svg",
+    "assets/table/tile-back.svg"
+  ],
+  "provenance": {
+    "characters": "AI generated for this project; PNG originals in source package",
+    "audio": "local synthesized PCM WAV",
+    "voices": "not produced"
+  }
+}

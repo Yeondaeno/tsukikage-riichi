@@ -1,0 +1,51 @@
+{
+  "runAt": "2026-10-02T13:30:50+0900",
+  "browser": "isolated Chromium CDP; touch is emulated",
+  "checks": [
+    {
+      "name": "skip repeats preserve settlement and unlock",
+      "passed": true,
+      "details": null
+    },
+    {
+      "name": "skip never pays twice",
+      "passed": true,
+      "details": null
+    },
+    {
+      "name": "preview leaves state and RNG unchanged",
+      "passed": true,
+      "details": null
+    },
+    {
+      "name": "tier mangan comes from evaluator",
+      "passed": true,
+      "details": null
+    },
+    {
+      "name": "tier haneman comes from evaluator",
+      "passed": true,
+      "details": null
+    },
+    {
+      "name": "tier baiman comes from evaluator",
+      "passed": true,
+      "details": null
+    },
+    {
+      "name": "tier sanbaiman comes from evaluator",
+      "passed": true,
+      "details": null
+    },
+    {
+      "name": "tier yakuman comes from evaluator",
+      "passed": true,
+      "details": null
+    },
+    {
+      "name": "independent guide / appearance / sound controls exist",
+      "passed": true,
+      "details": null
+    }
+  ]
+}

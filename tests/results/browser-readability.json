@@ -1,0 +1,26 @@
+{
+  "runAt": "2026-10-02T13:31:22+0900",
+  "browser": "isolated Chromium CDP",
+  "checks": [
+    {
+      "name": "public indicator focus opens enlarged face",
+      "passed": true,
+      "details": null
+    },
+    {
+      "name": "public match highlight is one exact tile type",
+      "passed": true,
+      "details": null
+    },
+    {
+      "name": "public long touch enlarges without discarding",
+      "passed": true,
+      "details": null
+    },
+    {
+      "name": "helper and actual dora off preserve recommendations",
+      "passed": true,
+      "details": null
+    }
+  ]
+}
