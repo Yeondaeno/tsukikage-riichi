@@ -1,30 +1,39 @@
 # 실행 · 빌드 · 정적 호스팅
 
-배포 빌드 ZIP을 풀고 **index.html**을 열면 플레이할 수 있다. **assets 폴더를 HTML 옆에 유지해야 한다.** 인터넷 서비스, 로그인, API 키가 필요하지 않다. 소재가 빠지면 텍스트 결과는 계속 작동하지만 캐릭터 이미지와 효과음은 나오지 않는다.
+v3.2는 외부 API·로그인·런타임 CDN 없이 실행됩니다. 배포 폴더의 `index.html`과 `assets`를 같은 상대 경로로 유지하세요.
 
-브라우저의 파일 제한이 있으면 폴더에서 로컬 정적 서버를 실행한다:
+## 실행과 일반 빌드
+
+`index.html`을 열거나, 파일 URL을 제한하는 브라우저에서는 다음처럼 로컬 서버를 사용합니다.
 
 ```powershell
 python -m http.server 8000 --bind 127.0.0.1
 ```
 
-브라우저에서 http://127.0.0.1:8000/index.html 을 연다. 이는 사용자의 PC에서 실행하는 주소이며 공개 배포 주소가 아니다.
-
-소스 빌드: Python 3 표준 라이브러리만으로 실행한다.
+소스에서 정적 결과물을 만들 때는 Python 3만 필요합니다.
 
 ```powershell
 python build.py --output dist/index.html
-node tests/unit.js
-node tests/simulation.js
-node tests/v3.js
 ```
 
-캐릭터 WebP/PNG, SVG, WAV는 이미 포함되어 있으므로 빌드에 이미지 생성이나 외부 서비스가 필요하지 않다. tools/create_assets.py는 제작 원본 재포장용이며 Pillow가 필요하다. 재포장은 일반 빌드에 필요하지 않다.
+빌드는 이미 저장소에 있는 `assets/vendor/three.min.js`와 37개 패면 SVG를 결과 HTML에 포함합니다. 따라서 일반 빌드나 플레이에 Node.js·네트워크가 필요하지 않습니다.
 
-정적 호스팅에는 dist 전체를 같은 경로 구조로 올린다. index.html과 assets의 상대 경로를 유지하고 WebP/PNG/SVG/WAV의 MIME 타입을 허용한다. 앱은 외부 API를 호출하지 않는다. CSP를 설정한다면 현재 번들에 들어 있는 인라인 JS/CSS와 img-src/data, 로컬 media-src를 고려해야 한다.
+## Three.js 번들 재생성
 
-GitHub Pages 배포는 저장소의 main 변경에 연결됩니다. 현재 배포 상태와 주소는 [배포 안내](DEPLOYMENT.md)와 저장소의 github-pages 환경에서 확인합니다. 서비스 워커/PWA 설치는 제공하지 않습니다.
+Three.js 의존성을 변경한 경우에만 실행합니다.
 
-저장은 해당 브라우저/출처의 localStorage를 사용한다. 파일 실행과 로컬 서버/호스팅은 출처가 달라 저장도 별개다. 저장 거부·용량 초과 시 현재 대국은 계속할 수 있다. v1 저장은 복사하여 검사한 뒤 이어하기에서 v3로 전환하며 원래 v1 키를 지우지 않는다. 형식이 맞지 않으면 이어하기를 거부하고 원본을 보존한다.
+```powershell
+npm ci
+npm run build:vendor
+python build.py --output dist/index.html
+```
 
-브라우저 검수 명령은 독립 Chromium CDP와 설치된 browser-harness를 사용한다. 테스트 스크립트의 localhost 포트는 8765, CDP 포트는 9331이다. 일반 사용자 실행에는 검수 도구가 필요하지 않다.
+`three@0.186.1`과 `esbuild@0.28.2`는 MIT 라이선스이며, `build:vendor`는 Three.js를 로컬 IIFE 번들로 만듭니다. 번들이 없으면 Python 빌드는 중단하고 이 절차를 안내합니다.
+
+## 호스팅 상태
+
+정적 호스팅에는 `dist` 전체를 올리고 WebP·PNG·SVG·WAV MIME 형식을 허용하세요. main의 변경을 GitHub Pages 작업이 검사·빌드·배포합니다. 실제 공개 버전·작업 실행·배포 후 검수는 [DEPLOYMENT.md](DEPLOYMENT.md)에 기록합니다.
+
+브라우저별 localStorage는 출처마다 분리됩니다. 파일 실행, 로컬 서버, 공개 호스팅의 저장은 서로 공유되지 않습니다.
+
+WebGL2 미지원·Three.js 누락·WebGL 컨텍스트 손실에서는 CSS 탁으로 전환합니다. 이것은 렌더링 대체 경로이며 게임 엔진, 현재 대국, 손패 재클릭과 드래그의 동작은 유지합니다. 범위와 검수 증거는 [Three.js 보고서](THREE-REPORT.md)에 있습니다.

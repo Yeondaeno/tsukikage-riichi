@@ -2,6 +2,8 @@
 from __future__ import annotations
 
 import argparse
+import base64
+import json
 import shutil
 from pathlib import Path
 
@@ -21,16 +23,28 @@ def main() -> None:
         ("/*__LAYOUT_CSS__*/", "layout-fixes.css"),
         ("/*__MOBILE_CSS__*/", "mobile-table.css"),
         ("/*__PERSPECTIVE_CSS__*/", "table-perspective.css"),
+        ("/*__THREE_CSS__*/", "table-3d.css"),
         ("/*__POLICY__*/", "policy.js"),
         ("/*__CHARACTERS__*/", "characters.js"),
         ("/*__INPUT__*/", "input.js"),
         ("/*__ENGINE__*/", "engine.js"),
         ("/*__VISUALS__*/", "visuals.js"),
+        ("/*__TABLE_3D__*/", "table-3d.js"),
         ("/*__APP__*/", "app.js"),
     ]:
         if html.count(marker) != 1:
             raise ValueError(f"Expected exactly one template marker: {marker}")
         html = html.replace(marker, (src / filename).read_text(encoding="utf-8"))
+    vendor = root / "assets" / "vendor" / "three.min.js"
+    if not vendor.is_file():
+        raise ValueError("Missing local Three.js bundle: run npm ci && npm run build:vendor")
+    faces = {p.stem: "data:image/svg+xml;base64," + base64.b64encode(p.read_bytes()).decode("ascii")
+             for p in sorted((root / "assets" / "tiles").glob("*.svg"))}
+    for marker, value in [("/*__THREE__*/", vendor.read_text(encoding="utf-8")),
+                          ("/*__TILE_FACES__*/", "window.RiichiTileFaces=" + json.dumps(faces) + ";")]:
+        if html.count(marker) != 1:
+            raise ValueError(f"Expected exactly one template marker: {marker}")
+        html = html.replace(marker, value)
     out = args.output.resolve()
     out.parent.mkdir(parents=True, exist_ok=True)
     out.write_text(html, encoding="utf-8")

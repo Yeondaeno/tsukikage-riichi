@@ -1,5 +1,5 @@
 {
-  "runAt": "2026-10-02T14:44:32+0900",
+  "runAt": "2026-10-02T18:12:11+0900",
   "browser": "isolated Chromium CDP",
   "checks": [
     {

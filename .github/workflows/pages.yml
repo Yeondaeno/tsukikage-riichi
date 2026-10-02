@@ -18,6 +18,12 @@ jobs:
       url: ${{ steps.deployment.outputs.page_url }}
     steps:
       - uses: actions/checkout@v6
+      - uses: actions/setup-node@v4
+        with:
+          node-version: '22'
+          cache: npm
+      - name: Restore pinned local renderer
+        run: npm ci && npm run build:vendor
       - name: Verify rules and CPU matches
         run: npm test
       - name: Build static game

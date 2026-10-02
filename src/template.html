@@ -12,6 +12,7 @@
 /*__LAYOUT_CSS__*/
 /*__MOBILE_CSS__*/
 /*__PERSPECTIVE_CSS__*/
+/*__THREE_CSS__*/
 </style>
 </head>
 <body>
@@ -25,6 +26,9 @@
  <section class="game-panel" aria-label="4인 리치마작 대국판">
   <div class="table-toolbar"><div class="table-meta"><span class="live-dot"></span><strong id="modeLabel">동풍전</strong><span class="toolbar-divider"></span><span id="roundLabel">동 1국 · 0본장</span></div><div class="toolbar-actions"><button id="designBtn" class="text-btn">패·연출</button><button id="pauseBtn" class="text-btn">일시정지</button><button id="newBtn" class="text-btn">새 대국 ↗</button></div></div>
   <div class="stage-shell" id="stageShell"><div class="stage" id="stage">
+   <div id="table3D" class="table-3d" aria-hidden="true"></div>
+   <div id="table3DControls" class="table-3d-controls" role="group" aria-label="테이블의 공개 패"></div>
+   <span id="tableRenderStatus" class="table-render-status" role="status" hidden></span>
    <section class="wall-hud" id="wallHud" aria-label="왕패와 도라 표시패"></section>
    <div class="seat-card north" id="seat2"></div><div class="seat-card east" id="seat1"></div><div class="seat-card west" id="seat3"></div>
    <div class="table-plane" id="tablePlane">
@@ -76,6 +80,11 @@
 </script>
 <script>
 /*__VISUALS__*/
+</script>
+<script>
+/*__THREE__*/
+/*__TILE_FACES__*/
+/*__TABLE_3D__*/
 </script>
 <script>
 /*__APP__*/

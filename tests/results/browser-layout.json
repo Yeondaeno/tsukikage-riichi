@@ -1,5 +1,5 @@
 {
-  "runAt": "2026-10-02T14:44:01+0900",
+  "runAt": "2026-10-02T18:11:35+0900",
   "browser": "isolated Chromium CDP; touch is emulated",
   "checks": [
     {
@@ -547,14 +547,14 @@
           "left": 12
         },
         "seat": {
-          "x": 252,
-          "y": 70,
+          "x": 17,
+          "y": 150,
           "width": 112.046875,
           "height": 41,
-          "top": 70,
-          "right": 364.046875,
-          "bottom": 111,
-          "left": 252
+          "top": 150,
+          "right": 129.046875,
+          "bottom": 191,
+          "left": 17
         },
         "hand": {
           "x": 15,
@@ -739,14 +739,14 @@
           "left": 12
         },
         "seat": {
-          "x": 200,
-          "y": 70,
+          "x": 17,
+          "y": 138,
           "width": 112.046875,
           "height": 41,
-          "top": 70,
-          "right": 312.046875,
-          "bottom": 111,
-          "left": 200
+          "top": 138,
+          "right": 129.046875,
+          "bottom": 179,
+          "left": 17
         },
         "hand": {
           "x": 15,
@@ -771,12 +771,12 @@
       "details": null
     },
     {
-      "name": "late-hand rivers have no clipped tiles",
+      "name": "late-hand public rivers remain visible",
       "passed": true,
       "details": null
     },
     {
-      "name": "declaration tiles rotated 90 degrees",
+      "name": "riichi declarations stay represented on the active table",
       "passed": true,
       "details": null
     }

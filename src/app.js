@@ -2,7 +2,7 @@
 const R=window.Riichi,$=id=>document.getElementById(id);
 const SAVE_KEY='tsukikage-riichi-state-v3',PREF_KEY='tsukikage-riichi-prefs-v3';
 const defaults={speed:650,sound:false,sfxVolume:50,voiceVolume:70,hints:true,guideLevel:'auto',recommend:true,helperLabels:true,actualDora:true,publicHighlight:true,dialogue:true,dialogueFrequency:'normal',riichiAuto:false,alerts:true,tileTheme:'jade',motion:'full',doraGlow:true};
-let fx=null,input=null,tutorialSeen=new Set(),backgroundPaused=false;
+let fx=null,input=null,table3D=null,tutorialSeen=new Set(),backgroundPaused=false;
 let prefs={...defaults},save=null,storageAvailable=true;
 try{
  const current=JSON.parse(localStorage.getItem(PREF_KEY)||'null'),legacy=JSON.parse(localStorage.getItem('tsukikage-riichi-prefs-v1')||'{}'),values=current||legacy;
@@ -191,6 +191,7 @@ function render(){
  $('pauseBtn').disabled=!started||['result','finished'].includes(game.phase);
  $('callChoice').hidden=!choiceList;if(choiceList)renderChoices();
  resizeStage();
+  table3D?.sync();
 }
 function renderHand(a){
  const p=game.players[0],legal=game.legalDiscards(0),rich=riichiMode?game.riichiOptions(0):[];
@@ -270,6 +271,7 @@ function renderLog(){
 }
 function resizeStage(){
  fx?.layoutRanks();
+ table3D?.resize();
 }
 new ResizeObserver(resizeStage).observe($('stageShell'));window.addEventListener('resize',resizeStage);
 function renderChoices(){
@@ -498,6 +500,7 @@ window.Tsukikage={
  tileSvg,
  showHelp,showSettings,render,previewEffects,
  get visuals(){return fx;},
+  get table3D(){return table3D;},
  get prefs(){return{...prefs};}
 };
 document.addEventListener('settlementDisplay',render);
@@ -516,5 +519,18 @@ document.addEventListener('keydown',e=>{if(e.key==='Escape')clearInspect();});
 fx=window.RiichiFX.create({R,getGame:()=>game,getPrefs:()=>prefs,tile,back,esc,sound});
  input=window.RiichiInput.create({canUse:id=>started&&!paused&&!modalType&&!fx.active&&game.legalDiscards(0).includes(id)&&(!riichiMode||game.riichiOptions(0).includes(id)),getVersion:()=>game.version,select:id=>{selected=id;render();},discard:id=>{selected=id;discardSelected();}});
  Characters.preload();
-fx.applyPrefs();initGame({mode:'east'});renderIcons();showWelcome();
+ fx.applyPrefs();initGame({mode:'east'});
+ table3D=window.RiichiTable3D?.create({stage:$('stage'),host:$('table3D'),controls:$('table3DControls'),tileName:id=>R.tileName(id,game.options.aka),getView:()=>({
+  aka:game.options.aka,theme:prefs.tileTheme,
+  players:game.players.map((p,i)=>({river:p.river.map(r=>({...r,latest:lastDiscard?.i===i&&lastDiscard.id===r.id})),melds:p.melds.map(m=>({...m,tiles:m.tiles.slice()})),handCount:p.hand.length,riichi:p.riichi,wind:game.seat(i)})),
+  indicators:game.indicators(),sticks:game.sticks,roundWind:game.roundWind(),roundIndex:game.roundIndex,honba:game.honba,remaining:game.wall.length,current:game.current,handNumber:game.handNumber
+ }),onStatus:(active,reason)=>{
+  $('stage').dataset.renderer=active?'three':'css';
+  $('tableRenderStatus').hidden=active;
+  $('tableRenderStatus').textContent=active?'':'기본 테이블로 표시 중';
+  $('tableRenderStatus').title=reason||'';
+ }});
+ if(!table3D){$('stage').dataset.renderer='css';$('tableRenderStatus').hidden=false;$('tableRenderStatus').textContent='기본 테이블로 표시 중';}
+ table3D?.sync();
+ renderIcons();showWelcome();
 })();

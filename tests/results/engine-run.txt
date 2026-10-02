@@ -1,3 +1,7 @@
+
+> tsukikage-riichi@3.2.0 test
+> node tests/unit.js && node tests/v3.js && node tests/simulation.js && node tests/matches.js
+
 PASS 136 identities / 34 types / exactly three red tiles
 PASS Dora cycles for all suits, winds and dragons
 PASS Standard shanten and multiple-sided waits
@@ -47,11 +51,11 @@ PASS Red and ordinary fives keep distinct physical identities
 PASS CPU personality differs for a shared efficiency-value-risk position
 PASS CPU choices use public information across several seeds
 7 v3 engine checks passed; 30 timed CPU decisions recorded.
-Completed 20 hands 3782 ms
-Completed 40 hands 7248 ms
-Completed 60 hands 10209 ms
-Completed 80 hands 13210 ms
-Completed 100 hands 16204 ms
+Completed 20 hands 4556 ms
+Completed 40 hands 8159 ms
+Completed 60 hands 11763 ms
+Completed 80 hands 14744 ms
+Completed 100 hands 17711 ms
 {
   "hands": 100,
   "wins": 69,
@@ -66,6 +70,11 @@ Completed 100 hands 16204 ms
   "tsumo": 30,
   "multipleRon": 0,
   "steps": 10165,
-  "elapsedMs": 16204
+  "elapsedMs": 17711
 }
-
+PASS complete match east 21 11 hands
+PASS complete match east 72 4 hands
+PASS complete match east 133 4 hands
+PASS complete match half 21 11 hands
+PASS complete match half 72 10 hands
+PASS complete match half 133 6 hands

@@ -1,4 +1,6 @@
 dist/
+node_modules/
+/tsukikage-riichi.html
 .omo/
 work/
 __pycache__/
