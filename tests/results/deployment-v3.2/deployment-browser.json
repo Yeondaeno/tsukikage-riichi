@@ -1,0 +1,273 @@
+{
+  "runAt": "2026-10-02T18:21:41+0900",
+  "url": "https://yeondaeno.github.io/tsukikage-riichi/?v=93d2217",
+  "environment": "Windows isolated Chromium; mobile size and touch emulated",
+  "checks": [
+    {
+      "name": "hosted v3 bootstraps",
+      "passed": true,
+      "details": null
+    },
+    {
+      "name": "native start opens one human plus three CPUs",
+      "passed": true,
+      "details": null
+    },
+    {
+      "name": "hosted Three table activates on the normal game surface",
+      "passed": true,
+      "details": {
+        "active": true,
+        "renderer": "three",
+        "active3D": "three",
+        "diagnostics": {
+          "active": true,
+          "loading": false,
+          "reason": "ready",
+          "theme": "jade",
+          "aka": true,
+          "renderer": "WebGL2",
+          "revision": 3,
+          "drawCalls": 60,
+          "triangles": 720,
+          "textures": 5,
+          "pixelRatio": 1,
+          "width": 1046,
+          "height": 433,
+          "frames": 3,
+          "publicTiles": [],
+          "hiddenCount": 39,
+          "faceTextureCount": 0
+        },
+        "webgl2": true
+      }
+    },
+    {
+      "name": "first live click selects only",
+      "passed": true,
+      "details": null
+    },
+    {
+      "name": "delayed live re-click discards once",
+      "passed": true,
+      "details": null
+    },
+    {
+      "name": "all forty deployed character images load",
+      "passed": true,
+      "details": null
+    },
+    {
+      "name": "all seven deployed WAV files decode",
+      "passed": true,
+      "details": null
+    },
+    {
+      "name": "normal hosted snapshot excludes hidden CPU hands and wall",
+      "passed": true,
+      "details": null
+    },
+    {
+      "name": "hosted landscape hand fits viewport",
+      "passed": true,
+      "details": null
+    },
+    {
+      "name": "hosted cut-in preview skips once and unlocks",
+      "passed": true,
+      "details": null
+    }
+  ],
+  "images": [
+    {
+      "src": "assets/characters/hina/base.webp",
+      "ok": true
+    },
+    {
+      "src": "assets/characters/hina/cutin.webp",
+      "ok": true
+    },
+    {
+      "src": "assets/characters/hina/special.webp",
+      "ok": true
+    },
+    {
+      "src": "assets/characters/hina/neutral.webp",
+      "ok": true
+    },
+    {
+      "src": "assets/characters/hina/smile.webp",
+      "ok": true
+    },
+    {
+      "src": "assets/characters/hina/thinking.webp",
+      "ok": true
+    },
+    {
+      "src": "assets/characters/hina/surprise.webp",
+      "ok": true
+    },
+    {
+      "src": "assets/characters/hina/riichi.webp",
+      "ok": true
+    },
+    {
+      "src": "assets/characters/hina/win.webp",
+      "ok": true
+    },
+    {
+      "src": "assets/characters/hina/loss.webp",
+      "ok": true
+    },
+    {
+      "src": "assets/characters/akane/base.webp",
+      "ok": true
+    },
+    {
+      "src": "assets/characters/akane/cutin.webp",
+      "ok": true
+    },
+    {
+      "src": "assets/characters/akane/special.webp",
+      "ok": true
+    },
+    {
+      "src": "assets/characters/akane/neutral.webp",
+      "ok": true
+    },
+    {
+      "src": "assets/characters/akane/smile.webp",
+      "ok": true
+    },
+    {
+      "src": "assets/characters/akane/thinking.webp",
+      "ok": true
+    },
+    {
+      "src": "assets/characters/akane/surprise.webp",
+      "ok": true
+    },
+    {
+      "src": "assets/characters/akane/riichi.webp",
+      "ok": true
+    },
+    {
+      "src": "assets/characters/akane/win.webp",
+      "ok": true
+    },
+    {
+      "src": "assets/characters/akane/loss.webp",
+      "ok": true
+    },
+    {
+      "src": "assets/characters/shizuku/base.webp",
+      "ok": true
+    },
+    {
+      "src": "assets/characters/shizuku/cutin.webp",
+      "ok": true
+    },
+    {
+      "src": "assets/characters/shizuku/special.webp",
+      "ok": true
+    },
+    {
+      "src": "assets/characters/shizuku/neutral.webp",
+      "ok": true
+    },
+    {
+      "src": "assets/characters/shizuku/smile.webp",
+      "ok": true
+    },
+    {
+      "src": "assets/characters/shizuku/thinking.webp",
+      "ok": true
+    },
+    {
+      "src": "assets/characters/shizuku/surprise.webp",
+      "ok": true
+    },
+    {
+      "src": "assets/characters/shizuku/riichi.webp",
+      "ok": true
+    },
+    {
+      "src": "assets/characters/shizuku/win.webp",
+      "ok": true
+    },
+    {
+      "src": "assets/characters/shizuku/loss.webp",
+      "ok": true
+    },
+    {
+      "src": "assets/characters/koharu/base.webp",
+      "ok": true
+    },
+    {
+      "src": "assets/characters/koharu/cutin.webp",
+      "ok": true
+    },
+    {
+      "src": "assets/characters/koharu/special.webp",
+      "ok": true
+    },
+    {
+      "src": "assets/characters/koharu/neutral.webp",
+      "ok": true
+    },
+    {
+      "src": "assets/characters/koharu/smile.webp",
+      "ok": true
+    },
+    {
+      "src": "assets/characters/koharu/thinking.webp",
+      "ok": true
+    },
+    {
+      "src": "assets/characters/koharu/surprise.webp",
+      "ok": true
+    },
+    {
+      "src": "assets/characters/koharu/riichi.webp",
+      "ok": true
+    },
+    {
+      "src": "assets/characters/koharu/win.webp",
+      "ok": true
+    },
+    {
+      "src": "assets/characters/koharu/loss.webp",
+      "ok": true
+    }
+  ],
+  "audio": [
+    {
+      "src": "assets/audio/tile.wav",
+      "duration": 0.43
+    },
+    {
+      "src": "assets/audio/select.wav",
+      "duration": 0.339958
+    },
+    {
+      "src": "assets/audio/riichi.wav",
+      "duration": 0.52
+    },
+    {
+      "src": "assets/audio/call.wav",
+      "duration": 0.43
+    },
+    {
+      "src": "assets/audio/win.wav",
+      "duration": 0.7
+    },
+    {
+      "src": "assets/audio/draw.wav",
+      "duration": 0.43
+    },
+    {
+      "src": "assets/audio/rank.wav",
+      "duration": 0.43
+    }
+  ]
+}
