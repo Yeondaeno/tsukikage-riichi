@@ -6,4 +6,8 @@ work/
 __pycache__/
 *.pyc
 tools/package_delivery.py
-
+.env
+.env.*
+!.env.example
+*.pem
+*.key
