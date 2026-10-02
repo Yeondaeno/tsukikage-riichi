@@ -113,7 +113,7 @@ elif group=='privacy':
     check('riichi auto starts disabled',js('Tsukikage.prefs.riichiAuto===false'))
     public=js("(()=>{history.replaceState({},'',location.pathname);return Tsukikage.snapshot()})()")
     check('normal snapshot contains no hidden wall or CPU hands','wall' not in public and 'dead' not in public and 'players' not in public)
-    assets=js('Characters.manifest');(ROOT/'assets'/'manifest.json').write_text(json.dumps(assets,ensure_ascii=False,indent=2),encoding='utf-8')
+    assets=json.loads((ROOT/'assets'/'manifest.json').read_text(encoding='utf-8'));assets.update(js('Characters.manifest'));(ROOT/'assets'/'manifest.json').write_text(json.dumps(assets,ensure_ascii=False,indent=2)+'\n',encoding='utf-8')
     svgs=js("Array.from({length:34},(_,t)=>({name:String(t).padStart(2,'0'),svg:Tsukikage.tileSvg(t*4+1)})).concat([16,52,88].map(id=>({name:'red-'+id,svg:Tsukikage.tileSvg(id)})))")
     dest=ROOT/'assets'/'tiles';dest.mkdir(exist_ok=True)
     for entry in svgs:

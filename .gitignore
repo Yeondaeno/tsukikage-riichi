@@ -1,4 +1,5 @@
 dist/
+.omo/
 work/
 __pycache__/
 *.pyc

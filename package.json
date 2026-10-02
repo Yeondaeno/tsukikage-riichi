@@ -1,6 +1,6 @@
 {
   "name": "tsukikage-riichi",
-  "version": "3.0.0",
+  "version": "3.1.0",
   "private": true,
   "description": "Offline four-player riichi mahjong: one human and three heuristic CPUs.",
   "main": "src/engine.js",

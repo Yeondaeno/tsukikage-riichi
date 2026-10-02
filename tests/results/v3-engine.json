@@ -1,40 +1,40 @@
 {
-  "runAt": "2026-10-02T04:21:34.467Z",
+  "runAt": "2026-10-02T05:07:07.438Z",
   "results": [
     {
       "name": "Seed and restored random stream reproduce the same wall",
       "passed": true,
-      "ms": 1.77
+      "ms": 2
     },
     {
       "name": "Accepted riichi emits once after the pending declaration and before next draw",
       "passed": true,
-      "ms": 9.1
+      "ms": 10.1
     },
     {
       "name": "Ron on declaration never accepts or charges a riichi stick",
       "passed": true,
-      "ms": 25.73
+      "ms": 22.48
     },
     {
       "name": "Repeated win, draw, resolve and next-hand messages do not settle twice",
       "passed": true,
-      "ms": 1.07
+      "ms": 1.19
     },
     {
       "name": "Red and ordinary fives keep distinct physical identities",
       "passed": true,
-      "ms": 0.68
+      "ms": 0.85
     },
     {
       "name": "CPU personality differs for a shared efficiency-value-risk position",
       "passed": true,
-      "ms": 0.21
+      "ms": 0.23
     },
     {
       "name": "CPU choices use public information across several seeds",
       "passed": true,
-      "ms": 65.23
+      "ms": 64.68
     }
   ],
   "comparisons": [
@@ -59,7 +59,7 @@
         31
       ],
       "id": 124,
-      "ms": 1.431,
+      "ms": 2.634,
       "seq": 1,
       "i": 1,
       "kind": "discard",
@@ -89,7 +89,7 @@
         31
       ],
       "id": 108,
-      "ms": 0.416,
+      "ms": 1.384,
       "seq": 1,
       "i": 2,
       "kind": "discard",
@@ -119,7 +119,7 @@
         31
       ],
       "id": 124,
-      "ms": 0.391,
+      "ms": 0.409,
       "seq": 1,
       "i": 3,
       "kind": "discard",
@@ -149,7 +149,7 @@
         31
       ],
       "id": 124,
-      "ms": 0.391,
+      "ms": 0.393,
       "seq": 1,
       "i": 1,
       "kind": "discard",
@@ -179,7 +179,7 @@
         31
       ],
       "id": 108,
-      "ms": 0.446,
+      "ms": 0.555,
       "seq": 1,
       "i": 2,
       "kind": "discard",
@@ -209,7 +209,7 @@
         31
       ],
       "id": 124,
-      "ms": 0.507,
+      "ms": 0.878,
       "seq": 1,
       "i": 3,
       "kind": "discard",
@@ -239,7 +239,7 @@
         31
       ],
       "id": 124,
-      "ms": 0.489,
+      "ms": 0.861,
       "seq": 1,
       "i": 1,
       "kind": "discard",
@@ -269,7 +269,7 @@
         31
       ],
       "id": 108,
-      "ms": 0.562,
+      "ms": 0.884,
       "seq": 1,
       "i": 2,
       "kind": "discard",
@@ -299,7 +299,7 @@
         31
       ],
       "id": 124,
-      "ms": 0.326,
+      "ms": 0.689,
       "seq": 1,
       "i": 3,
       "kind": "discard",
@@ -329,7 +329,7 @@
         31
       ],
       "id": 112,
-      "ms": 0.64,
+      "ms": 0.316,
       "seq": 1,
       "i": 1,
       "kind": "discard",
@@ -359,7 +359,7 @@
         31
       ],
       "id": 124,
-      "ms": 0.647,
+      "ms": 0.603,
       "seq": 1,
       "i": 2,
       "kind": "discard",
@@ -389,7 +389,7 @@
         31
       ],
       "id": 112,
-      "ms": 0.464,
+      "ms": 0.777,
       "seq": 1,
       "i": 3,
       "kind": "discard",
@@ -419,7 +419,7 @@
         31
       ],
       "id": 124,
-      "ms": 0.581,
+      "ms": 0.482,
       "seq": 1,
       "i": 1,
       "kind": "discard",
@@ -449,7 +449,7 @@
         31
       ],
       "id": 108,
-      "ms": 1.027,
+      "ms": 0.872,
       "seq": 1,
       "i": 2,
       "kind": "discard",
@@ -479,7 +479,7 @@
         31
       ],
       "id": 124,
-      "ms": 0.601,
+      "ms": 0.526,
       "seq": 1,
       "i": 3,
       "kind": "discard",
@@ -509,7 +509,7 @@
         31
       ],
       "id": 120,
-      "ms": 0.564,
+      "ms": 0.339,
       "seq": 1,
       "i": 1,
       "kind": "discard",
@@ -539,7 +539,7 @@
         31
       ],
       "id": 112,
-      "ms": 0.533,
+      "ms": 0.308,
       "seq": 1,
       "i": 2,
       "kind": "discard",
@@ -569,7 +569,7 @@
         31
       ],
       "id": 120,
-      "ms": 0.35,
+      "ms": 0.355,
       "seq": 1,
       "i": 3,
       "kind": "discard",
@@ -599,7 +599,7 @@
         31
       ],
       "id": 124,
-      "ms": 0.397,
+      "ms": 0.472,
       "seq": 1,
       "i": 1,
       "kind": "discard",
@@ -629,7 +629,7 @@
         31
       ],
       "id": 108,
-      "ms": 0.51,
+      "ms": 0.397,
       "seq": 1,
       "i": 2,
       "kind": "discard",
@@ -659,7 +659,7 @@
         31
       ],
       "id": 124,
-      "ms": 0.282,
+      "ms": 0.404,
       "seq": 1,
       "i": 3,
       "kind": "discard",
@@ -689,7 +689,7 @@
         31
       ],
       "id": 124,
-      "ms": 0.278,
+      "ms": 0.395,
       "seq": 1,
       "i": 1,
       "kind": "discard",
@@ -719,7 +719,7 @@
         31
       ],
       "id": 108,
-      "ms": 0.294,
+      "ms": 0.281,
       "seq": 1,
       "i": 2,
       "kind": "discard",
@@ -732,6 +732,36 @@
       "seed": 404,
       "character": "koharu",
       "difficulty": "easy",
+      "ownTypes": [
+        2,
+        0,
+        12,
+        16,
+        17,
+        17,
+        19,
+        22,
+        26,
+        27,
+        27,
+        28,
+        30,
+        31
+      ],
+      "id": 124,
+      "ms": 0.304,
+      "seq": 1,
+      "i": 3,
+      "kind": "discard",
+      "threat": true,
+      "shanten": 4,
+      "risk": 0.6,
+      "policyValue": -442
+    },
+    {
+      "seed": 505,
+      "character": "akane",
+      "difficulty": "normal",
       "ownTypes": [
         2,
         0,
@@ -751,36 +781,6 @@
       "id": 124,
       "ms": 0.28,
       "seq": 1,
-      "i": 3,
-      "kind": "discard",
-      "threat": true,
-      "shanten": 4,
-      "risk": 0.6,
-      "policyValue": -442
-    },
-    {
-      "seed": 505,
-      "character": "akane",
-      "difficulty": "normal",
-      "ownTypes": [
-        2,
-        0,
-        12,
-        16,
-        17,
-        17,
-        19,
-        22,
-        26,
-        27,
-        27,
-        28,
-        30,
-        31
-      ],
-      "id": 124,
-      "ms": 0.294,
-      "seq": 1,
       "i": 1,
       "kind": "discard",
       "threat": true,
@@ -809,7 +809,7 @@
         31
       ],
       "id": 108,
-      "ms": 0.277,
+      "ms": 0.283,
       "seq": 1,
       "i": 2,
       "kind": "discard",
@@ -839,7 +839,7 @@
         31
       ],
       "id": 124,
-      "ms": 0.282,
+      "ms": 0.458,
       "seq": 1,
       "i": 3,
       "kind": "discard",
@@ -869,7 +869,7 @@
         31
       ],
       "id": 120,
-      "ms": 0.292,
+      "ms": 0.281,
       "seq": 1,
       "i": 1,
       "kind": "discard",
@@ -899,7 +899,7 @@
         31
       ],
       "id": 112,
-      "ms": 0.291,
+      "ms": 0.288,
       "seq": 1,
       "i": 2,
       "kind": "discard",
@@ -929,7 +929,7 @@
         31
       ],
       "id": 120,
-      "ms": 0.329,
+      "ms": 0.303,
       "seq": 1,
       "i": 3,
       "kind": "discard",

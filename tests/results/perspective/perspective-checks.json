@@ -1,0 +1,1799 @@
+{
+  "runAt": "2026-10-02T14:41:06+0900",
+  "browser": "browser-harness CDP; touch is emulated",
+  "checks": [
+    {
+      "name": "1920x1080 screen fits",
+      "passed": true,
+      "details": {
+        "width": 1920,
+        "height": 1080,
+        "scrollWidth": 1920,
+        "scrollHeight": 1080,
+        "table": "matrix3d(1, 0, 0, 0, 0, 0.848048, 0.529919, 0, 0, -0.529919, 0.848048, 0, -620, -310, 0, 1)",
+        "flat": [
+          [
+            "#handRow",
+            false
+          ],
+          [
+            "#discardZone",
+            false
+          ],
+          [
+            "#wallHud",
+            false
+          ],
+          [
+            "#seat1",
+            false
+          ],
+          [
+            "#seat2",
+            false
+          ],
+          [
+            "#seat3",
+            false
+          ]
+        ],
+        "tiles": [
+          {
+            "x": 380.5,
+            "y": 907,
+            "width": 57,
+            "height": 80,
+            "top": 907,
+            "right": 437.5,
+            "bottom": 987,
+            "left": 380.5
+          },
+          {
+            "x": 442.5,
+            "y": 907,
+            "width": 57,
+            "height": 80,
+            "top": 907,
+            "right": 499.5,
+            "bottom": 987,
+            "left": 442.5
+          },
+          {
+            "x": 504.5,
+            "y": 907,
+            "width": 57,
+            "height": 80,
+            "top": 907,
+            "right": 561.5,
+            "bottom": 987,
+            "left": 504.5
+          },
+          {
+            "x": 566.5,
+            "y": 907,
+            "width": 57,
+            "height": 80,
+            "top": 907,
+            "right": 623.5,
+            "bottom": 987,
+            "left": 566.5
+          },
+          {
+            "x": 628.5,
+            "y": 907,
+            "width": 57,
+            "height": 80,
+            "top": 907,
+            "right": 685.5,
+            "bottom": 987,
+            "left": 628.5
+          },
+          {
+            "x": 690.5,
+            "y": 907,
+            "width": 57,
+            "height": 80,
+            "top": 907,
+            "right": 747.5,
+            "bottom": 987,
+            "left": 690.5
+          },
+          {
+            "x": 752.5,
+            "y": 907,
+            "width": 57,
+            "height": 80,
+            "top": 907,
+            "right": 809.5,
+            "bottom": 987,
+            "left": 752.5
+          },
+          {
+            "x": 814.5,
+            "y": 907,
+            "width": 57,
+            "height": 80,
+            "top": 907,
+            "right": 871.5,
+            "bottom": 987,
+            "left": 814.5
+          },
+          {
+            "x": 876.5,
+            "y": 907,
+            "width": 57,
+            "height": 80,
+            "top": 907,
+            "right": 933.5,
+            "bottom": 987,
+            "left": 876.5
+          },
+          {
+            "x": 938.5,
+            "y": 907,
+            "width": 57,
+            "height": 80,
+            "top": 907,
+            "right": 995.5,
+            "bottom": 987,
+            "left": 938.5
+          },
+          {
+            "x": 1000.5,
+            "y": 907,
+            "width": 57,
+            "height": 80,
+            "top": 907,
+            "right": 1057.5,
+            "bottom": 987,
+            "left": 1000.5
+          },
+          {
+            "x": 1062.5,
+            "y": 907,
+            "width": 57,
+            "height": 80,
+            "top": 907,
+            "right": 1119.5,
+            "bottom": 987,
+            "left": 1062.5
+          },
+          {
+            "x": 1124.5,
+            "y": 907,
+            "width": 57,
+            "height": 80,
+            "top": 907,
+            "right": 1181.5,
+            "bottom": 987,
+            "left": 1124.5
+          },
+          {
+            "x": 1196.5,
+            "y": 907,
+            "width": 57,
+            "height": 80,
+            "top": 907,
+            "right": 1253.5,
+            "bottom": 987,
+            "left": 1196.5
+          }
+        ]
+      }
+    },
+    {
+      "name": "1920x1080 table plane has a nonidentity 3D transform",
+      "passed": true,
+      "details": "matrix3d(1, 0, 0, 0, 0, 0.848048, 0.529919, 0, 0, -0.529919, 0.848048, 0, -620, -310, 0, 1)"
+    },
+    {
+      "name": "1920x1080 hand, drop, wall, and seats avoid 3D ancestors",
+      "passed": true,
+      "details": [
+        [
+          "#handRow",
+          false
+        ],
+        [
+          "#discardZone",
+          false
+        ],
+        [
+          "#wallHud",
+          false
+        ],
+        [
+          "#seat1",
+          false
+        ],
+        [
+          "#seat2",
+          false
+        ],
+        [
+          "#seat3",
+          false
+        ]
+      ]
+    },
+    {
+      "name": "1920x1080 hand stays visible",
+      "passed": true,
+      "details": [
+        {
+          "x": 380.5,
+          "y": 907,
+          "width": 57,
+          "height": 80,
+          "top": 907,
+          "right": 437.5,
+          "bottom": 987,
+          "left": 380.5
+        },
+        {
+          "x": 442.5,
+          "y": 907,
+          "width": 57,
+          "height": 80,
+          "top": 907,
+          "right": 499.5,
+          "bottom": 987,
+          "left": 442.5
+        },
+        {
+          "x": 504.5,
+          "y": 907,
+          "width": 57,
+          "height": 80,
+          "top": 907,
+          "right": 561.5,
+          "bottom": 987,
+          "left": 504.5
+        },
+        {
+          "x": 566.5,
+          "y": 907,
+          "width": 57,
+          "height": 80,
+          "top": 907,
+          "right": 623.5,
+          "bottom": 987,
+          "left": 566.5
+        },
+        {
+          "x": 628.5,
+          "y": 907,
+          "width": 57,
+          "height": 80,
+          "top": 907,
+          "right": 685.5,
+          "bottom": 987,
+          "left": 628.5
+        },
+        {
+          "x": 690.5,
+          "y": 907,
+          "width": 57,
+          "height": 80,
+          "top": 907,
+          "right": 747.5,
+          "bottom": 987,
+          "left": 690.5
+        },
+        {
+          "x": 752.5,
+          "y": 907,
+          "width": 57,
+          "height": 80,
+          "top": 907,
+          "right": 809.5,
+          "bottom": 987,
+          "left": 752.5
+        },
+        {
+          "x": 814.5,
+          "y": 907,
+          "width": 57,
+          "height": 80,
+          "top": 907,
+          "right": 871.5,
+          "bottom": 987,
+          "left": 814.5
+        },
+        {
+          "x": 876.5,
+          "y": 907,
+          "width": 57,
+          "height": 80,
+          "top": 907,
+          "right": 933.5,
+          "bottom": 987,
+          "left": 876.5
+        },
+        {
+          "x": 938.5,
+          "y": 907,
+          "width": 57,
+          "height": 80,
+          "top": 907,
+          "right": 995.5,
+          "bottom": 987,
+          "left": 938.5
+        },
+        {
+          "x": 1000.5,
+          "y": 907,
+          "width": 57,
+          "height": 80,
+          "top": 907,
+          "right": 1057.5,
+          "bottom": 987,
+          "left": 1000.5
+        },
+        {
+          "x": 1062.5,
+          "y": 907,
+          "width": 57,
+          "height": 80,
+          "top": 907,
+          "right": 1119.5,
+          "bottom": 987,
+          "left": 1062.5
+        },
+        {
+          "x": 1124.5,
+          "y": 907,
+          "width": 57,
+          "height": 80,
+          "top": 907,
+          "right": 1181.5,
+          "bottom": 987,
+          "left": 1124.5
+        },
+        {
+          "x": 1196.5,
+          "y": 907,
+          "width": 57,
+          "height": 80,
+          "top": 907,
+          "right": 1253.5,
+          "bottom": 987,
+          "left": 1196.5
+        }
+      ]
+    },
+    {
+      "name": "1366x768 screen fits",
+      "passed": true,
+      "details": {
+        "width": 1366,
+        "height": 768,
+        "scrollWidth": 1366,
+        "scrollHeight": 768,
+        "table": "matrix3d(1, 0, 0, 0, 0, 0.848048, 0.529919, 0, 0, -0.529919, 0.848048, 0, -444.547, -203.508, 0, 1)",
+        "flat": [
+          [
+            "#handRow",
+            false
+          ],
+          [
+            "#discardZone",
+            false
+          ],
+          [
+            "#wallHud",
+            false
+          ],
+          [
+            "#seat1",
+            false
+          ],
+          [
+            "#seat2",
+            false
+          ],
+          [
+            "#seat3",
+            false
+          ]
+        ],
+        "tiles": [
+          {
+            "x": 180.5,
+            "y": 595,
+            "width": 46,
+            "height": 65,
+            "top": 595,
+            "right": 226.5,
+            "bottom": 660,
+            "left": 180.5
+          },
+          {
+            "x": 231.5,
+            "y": 595,
+            "width": 46,
+            "height": 65,
+            "top": 595,
+            "right": 277.5,
+            "bottom": 660,
+            "left": 231.5
+          },
+          {
+            "x": 282.5,
+            "y": 595,
+            "width": 46,
+            "height": 65,
+            "top": 595,
+            "right": 328.5,
+            "bottom": 660,
+            "left": 282.5
+          },
+          {
+            "x": 333.5,
+            "y": 595,
+            "width": 46,
+            "height": 65,
+            "top": 595,
+            "right": 379.5,
+            "bottom": 660,
+            "left": 333.5
+          },
+          {
+            "x": 384.5,
+            "y": 595,
+            "width": 46,
+            "height": 65,
+            "top": 595,
+            "right": 430.5,
+            "bottom": 660,
+            "left": 384.5
+          },
+          {
+            "x": 435.5,
+            "y": 595,
+            "width": 46,
+            "height": 65,
+            "top": 595,
+            "right": 481.5,
+            "bottom": 660,
+            "left": 435.5
+          },
+          {
+            "x": 486.5,
+            "y": 595,
+            "width": 46,
+            "height": 65,
+            "top": 595,
+            "right": 532.5,
+            "bottom": 660,
+            "left": 486.5
+          },
+          {
+            "x": 537.5,
+            "y": 595,
+            "width": 46,
+            "height": 65,
+            "top": 595,
+            "right": 583.5,
+            "bottom": 660,
+            "left": 537.5
+          },
+          {
+            "x": 588.5,
+            "y": 595,
+            "width": 46,
+            "height": 65,
+            "top": 595,
+            "right": 634.5,
+            "bottom": 660,
+            "left": 588.5
+          },
+          {
+            "x": 639.5,
+            "y": 595,
+            "width": 46,
+            "height": 65,
+            "top": 595,
+            "right": 685.5,
+            "bottom": 660,
+            "left": 639.5
+          },
+          {
+            "x": 690.5,
+            "y": 595,
+            "width": 46,
+            "height": 65,
+            "top": 595,
+            "right": 736.5,
+            "bottom": 660,
+            "left": 690.5
+          },
+          {
+            "x": 741.5,
+            "y": 595,
+            "width": 46,
+            "height": 65,
+            "top": 595,
+            "right": 787.5,
+            "bottom": 660,
+            "left": 741.5
+          },
+          {
+            "x": 792.5,
+            "y": 595,
+            "width": 46,
+            "height": 65,
+            "top": 595,
+            "right": 838.5,
+            "bottom": 660,
+            "left": 792.5
+          },
+          {
+            "x": 853.5,
+            "y": 595,
+            "width": 46,
+            "height": 65,
+            "top": 595,
+            "right": 899.5,
+            "bottom": 660,
+            "left": 853.5
+          }
+        ]
+      }
+    },
+    {
+      "name": "1366x768 table plane has a nonidentity 3D transform",
+      "passed": true,
+      "details": "matrix3d(1, 0, 0, 0, 0, 0.848048, 0.529919, 0, 0, -0.529919, 0.848048, 0, -444.547, -203.508, 0, 1)"
+    },
+    {
+      "name": "1366x768 hand, drop, wall, and seats avoid 3D ancestors",
+      "passed": true,
+      "details": [
+        [
+          "#handRow",
+          false
+        ],
+        [
+          "#discardZone",
+          false
+        ],
+        [
+          "#wallHud",
+          false
+        ],
+        [
+          "#seat1",
+          false
+        ],
+        [
+          "#seat2",
+          false
+        ],
+        [
+          "#seat3",
+          false
+        ]
+      ]
+    },
+    {
+      "name": "1366x768 hand stays visible",
+      "passed": true,
+      "details": [
+        {
+          "x": 180.5,
+          "y": 595,
+          "width": 46,
+          "height": 65,
+          "top": 595,
+          "right": 226.5,
+          "bottom": 660,
+          "left": 180.5
+        },
+        {
+          "x": 231.5,
+          "y": 595,
+          "width": 46,
+          "height": 65,
+          "top": 595,
+          "right": 277.5,
+          "bottom": 660,
+          "left": 231.5
+        },
+        {
+          "x": 282.5,
+          "y": 595,
+          "width": 46,
+          "height": 65,
+          "top": 595,
+          "right": 328.5,
+          "bottom": 660,
+          "left": 282.5
+        },
+        {
+          "x": 333.5,
+          "y": 595,
+          "width": 46,
+          "height": 65,
+          "top": 595,
+          "right": 379.5,
+          "bottom": 660,
+          "left": 333.5
+        },
+        {
+          "x": 384.5,
+          "y": 595,
+          "width": 46,
+          "height": 65,
+          "top": 595,
+          "right": 430.5,
+          "bottom": 660,
+          "left": 384.5
+        },
+        {
+          "x": 435.5,
+          "y": 595,
+          "width": 46,
+          "height": 65,
+          "top": 595,
+          "right": 481.5,
+          "bottom": 660,
+          "left": 435.5
+        },
+        {
+          "x": 486.5,
+          "y": 595,
+          "width": 46,
+          "height": 65,
+          "top": 595,
+          "right": 532.5,
+          "bottom": 660,
+          "left": 486.5
+        },
+        {
+          "x": 537.5,
+          "y": 595,
+          "width": 46,
+          "height": 65,
+          "top": 595,
+          "right": 583.5,
+          "bottom": 660,
+          "left": 537.5
+        },
+        {
+          "x": 588.5,
+          "y": 595,
+          "width": 46,
+          "height": 65,
+          "top": 595,
+          "right": 634.5,
+          "bottom": 660,
+          "left": 588.5
+        },
+        {
+          "x": 639.5,
+          "y": 595,
+          "width": 46,
+          "height": 65,
+          "top": 595,
+          "right": 685.5,
+          "bottom": 660,
+          "left": 639.5
+        },
+        {
+          "x": 690.5,
+          "y": 595,
+          "width": 46,
+          "height": 65,
+          "top": 595,
+          "right": 736.5,
+          "bottom": 660,
+          "left": 690.5
+        },
+        {
+          "x": 741.5,
+          "y": 595,
+          "width": 46,
+          "height": 65,
+          "top": 595,
+          "right": 787.5,
+          "bottom": 660,
+          "left": 741.5
+        },
+        {
+          "x": 792.5,
+          "y": 595,
+          "width": 46,
+          "height": 65,
+          "top": 595,
+          "right": 838.5,
+          "bottom": 660,
+          "left": 792.5
+        },
+        {
+          "x": 853.5,
+          "y": 595,
+          "width": 46,
+          "height": 65,
+          "top": 595,
+          "right": 899.5,
+          "bottom": 660,
+          "left": 853.5
+        }
+      ]
+    },
+    {
+      "name": "844x390 screen fits",
+      "passed": true,
+      "details": {
+        "width": 844,
+        "height": 390,
+        "scrollWidth": 844,
+        "scrollHeight": 390,
+        "table": "matrix3d(1, 0, 0, 0, 0, 0.939693, 0.34202, 0, 0, -0.34202, 0.939693, 0, -373.5, -100.797, 0, 1)",
+        "flat": [
+          [
+            "#handRow",
+            false
+          ],
+          [
+            "#discardZone",
+            false
+          ],
+          [
+            "#wallHud",
+            false
+          ],
+          [
+            "#seat1",
+            false
+          ],
+          [
+            "#seat2",
+            false
+          ],
+          [
+            "#seat3",
+            false
+          ]
+        ],
+        "tiles": [
+          {
+            "x": 133.625,
+            "y": 307,
+            "width": 37.125,
+            "height": 42,
+            "top": 307,
+            "right": 170.75,
+            "bottom": 349,
+            "left": 133.625
+          },
+          {
+            "x": 174.75,
+            "y": 307,
+            "width": 37.125,
+            "height": 42,
+            "top": 307,
+            "right": 211.875,
+            "bottom": 349,
+            "left": 174.75
+          },
+          {
+            "x": 215.875,
+            "y": 307,
+            "width": 37.125,
+            "height": 42,
+            "top": 307,
+            "right": 253,
+            "bottom": 349,
+            "left": 215.875
+          },
+          {
+            "x": 257,
+            "y": 307,
+            "width": 37.125,
+            "height": 42,
+            "top": 307,
+            "right": 294.125,
+            "bottom": 349,
+            "left": 257
+          },
+          {
+            "x": 298.125,
+            "y": 307,
+            "width": 37.125,
+            "height": 42,
+            "top": 307,
+            "right": 335.25,
+            "bottom": 349,
+            "left": 298.125
+          },
+          {
+            "x": 339.25,
+            "y": 307,
+            "width": 37.125,
+            "height": 42,
+            "top": 307,
+            "right": 376.375,
+            "bottom": 349,
+            "left": 339.25
+          },
+          {
+            "x": 380.375,
+            "y": 307,
+            "width": 37.125,
+            "height": 42,
+            "top": 307,
+            "right": 417.5,
+            "bottom": 349,
+            "left": 380.375
+          },
+          {
+            "x": 421.5,
+            "y": 307,
+            "width": 37.125,
+            "height": 42,
+            "top": 307,
+            "right": 458.625,
+            "bottom": 349,
+            "left": 421.5
+          },
+          {
+            "x": 462.625,
+            "y": 307,
+            "width": 37.125,
+            "height": 42,
+            "top": 307,
+            "right": 499.75,
+            "bottom": 349,
+            "left": 462.625
+          },
+          {
+            "x": 503.75,
+            "y": 307,
+            "width": 37.125,
+            "height": 42,
+            "top": 307,
+            "right": 540.875,
+            "bottom": 349,
+            "left": 503.75
+          },
+          {
+            "x": 544.875,
+            "y": 307,
+            "width": 37.125,
+            "height": 42,
+            "top": 307,
+            "right": 582,
+            "bottom": 349,
+            "left": 544.875
+          },
+          {
+            "x": 586,
+            "y": 307,
+            "width": 37.125,
+            "height": 42,
+            "top": 307,
+            "right": 623.125,
+            "bottom": 349,
+            "left": 586
+          },
+          {
+            "x": 627.125,
+            "y": 307,
+            "width": 37.125,
+            "height": 42,
+            "top": 307,
+            "right": 664.25,
+            "bottom": 349,
+            "left": 627.125
+          },
+          {
+            "x": 673.25,
+            "y": 307,
+            "width": 37.125,
+            "height": 42,
+            "top": 307,
+            "right": 710.375,
+            "bottom": 349,
+            "left": 673.25
+          }
+        ]
+      }
+    },
+    {
+      "name": "844x390 table plane has a nonidentity 3D transform",
+      "passed": true,
+      "details": "matrix3d(1, 0, 0, 0, 0, 0.939693, 0.34202, 0, 0, -0.34202, 0.939693, 0, -373.5, -100.797, 0, 1)"
+    },
+    {
+      "name": "844x390 hand, drop, wall, and seats avoid 3D ancestors",
+      "passed": true,
+      "details": [
+        [
+          "#handRow",
+          false
+        ],
+        [
+          "#discardZone",
+          false
+        ],
+        [
+          "#wallHud",
+          false
+        ],
+        [
+          "#seat1",
+          false
+        ],
+        [
+          "#seat2",
+          false
+        ],
+        [
+          "#seat3",
+          false
+        ]
+      ]
+    },
+    {
+      "name": "844x390 hand stays visible",
+      "passed": true,
+      "details": [
+        {
+          "x": 133.625,
+          "y": 307,
+          "width": 37.125,
+          "height": 42,
+          "top": 307,
+          "right": 170.75,
+          "bottom": 349,
+          "left": 133.625
+        },
+        {
+          "x": 174.75,
+          "y": 307,
+          "width": 37.125,
+          "height": 42,
+          "top": 307,
+          "right": 211.875,
+          "bottom": 349,
+          "left": 174.75
+        },
+        {
+          "x": 215.875,
+          "y": 307,
+          "width": 37.125,
+          "height": 42,
+          "top": 307,
+          "right": 253,
+          "bottom": 349,
+          "left": 215.875
+        },
+        {
+          "x": 257,
+          "y": 307,
+          "width": 37.125,
+          "height": 42,
+          "top": 307,
+          "right": 294.125,
+          "bottom": 349,
+          "left": 257
+        },
+        {
+          "x": 298.125,
+          "y": 307,
+          "width": 37.125,
+          "height": 42,
+          "top": 307,
+          "right": 335.25,
+          "bottom": 349,
+          "left": 298.125
+        },
+        {
+          "x": 339.25,
+          "y": 307,
+          "width": 37.125,
+          "height": 42,
+          "top": 307,
+          "right": 376.375,
+          "bottom": 349,
+          "left": 339.25
+        },
+        {
+          "x": 380.375,
+          "y": 307,
+          "width": 37.125,
+          "height": 42,
+          "top": 307,
+          "right": 417.5,
+          "bottom": 349,
+          "left": 380.375
+        },
+        {
+          "x": 421.5,
+          "y": 307,
+          "width": 37.125,
+          "height": 42,
+          "top": 307,
+          "right": 458.625,
+          "bottom": 349,
+          "left": 421.5
+        },
+        {
+          "x": 462.625,
+          "y": 307,
+          "width": 37.125,
+          "height": 42,
+          "top": 307,
+          "right": 499.75,
+          "bottom": 349,
+          "left": 462.625
+        },
+        {
+          "x": 503.75,
+          "y": 307,
+          "width": 37.125,
+          "height": 42,
+          "top": 307,
+          "right": 540.875,
+          "bottom": 349,
+          "left": 503.75
+        },
+        {
+          "x": 544.875,
+          "y": 307,
+          "width": 37.125,
+          "height": 42,
+          "top": 307,
+          "right": 582,
+          "bottom": 349,
+          "left": 544.875
+        },
+        {
+          "x": 586,
+          "y": 307,
+          "width": 37.125,
+          "height": 42,
+          "top": 307,
+          "right": 623.125,
+          "bottom": 349,
+          "left": 586
+        },
+        {
+          "x": 627.125,
+          "y": 307,
+          "width": 37.125,
+          "height": 42,
+          "top": 307,
+          "right": 664.25,
+          "bottom": 349,
+          "left": 627.125
+        },
+        {
+          "x": 673.25,
+          "y": 307,
+          "width": 37.125,
+          "height": 42,
+          "top": 307,
+          "right": 710.375,
+          "bottom": 349,
+          "left": 673.25
+        }
+      ]
+    },
+    {
+      "name": "740x360 screen fits",
+      "passed": true,
+      "details": {
+        "width": 740,
+        "height": 360,
+        "scrollWidth": 740,
+        "scrollHeight": 360,
+        "table": "matrix3d(1, 0, 0, 0, 0, 0.939693, 0.34202, 0, 0, -0.34202, 0.939693, 0, -326.695, -86.3984, 0, 1)",
+        "flat": [
+          [
+            "#handRow",
+            false
+          ],
+          [
+            "#discardZone",
+            false
+          ],
+          [
+            "#wallHud",
+            false
+          ],
+          [
+            "#seat1",
+            false
+          ],
+          [
+            "#seat2",
+            false
+          ],
+          [
+            "#seat3",
+            false
+          ]
+        ],
+        "tiles": [
+          {
+            "x": 113.671875,
+            "y": 277,
+            "width": 32.546875,
+            "height": 42,
+            "top": 277,
+            "right": 146.21875,
+            "bottom": 319,
+            "left": 113.671875
+          },
+          {
+            "x": 150.21875,
+            "y": 277,
+            "width": 32.546875,
+            "height": 42,
+            "top": 277,
+            "right": 182.765625,
+            "bottom": 319,
+            "left": 150.21875
+          },
+          {
+            "x": 186.765625,
+            "y": 277,
+            "width": 32.546875,
+            "height": 42,
+            "top": 277,
+            "right": 219.3125,
+            "bottom": 319,
+            "left": 186.765625
+          },
+          {
+            "x": 223.3125,
+            "y": 277,
+            "width": 32.546875,
+            "height": 42,
+            "top": 277,
+            "right": 255.859375,
+            "bottom": 319,
+            "left": 223.3125
+          },
+          {
+            "x": 259.859375,
+            "y": 277,
+            "width": 32.546875,
+            "height": 42,
+            "top": 277,
+            "right": 292.40625,
+            "bottom": 319,
+            "left": 259.859375
+          },
+          {
+            "x": 296.40625,
+            "y": 277,
+            "width": 32.546875,
+            "height": 42,
+            "top": 277,
+            "right": 328.953125,
+            "bottom": 319,
+            "left": 296.40625
+          },
+          {
+            "x": 332.953125,
+            "y": 277,
+            "width": 32.546875,
+            "height": 42,
+            "top": 277,
+            "right": 365.5,
+            "bottom": 319,
+            "left": 332.953125
+          },
+          {
+            "x": 369.5,
+            "y": 277,
+            "width": 32.546875,
+            "height": 42,
+            "top": 277,
+            "right": 402.046875,
+            "bottom": 319,
+            "left": 369.5
+          },
+          {
+            "x": 406.046875,
+            "y": 277,
+            "width": 32.546875,
+            "height": 42,
+            "top": 277,
+            "right": 438.59375,
+            "bottom": 319,
+            "left": 406.046875
+          },
+          {
+            "x": 442.59375,
+            "y": 277,
+            "width": 32.546875,
+            "height": 42,
+            "top": 277,
+            "right": 475.140625,
+            "bottom": 319,
+            "left": 442.59375
+          },
+          {
+            "x": 479.140625,
+            "y": 277,
+            "width": 32.546875,
+            "height": 42,
+            "top": 277,
+            "right": 511.6875,
+            "bottom": 319,
+            "left": 479.140625
+          },
+          {
+            "x": 515.6875,
+            "y": 277,
+            "width": 32.546875,
+            "height": 42,
+            "top": 277,
+            "right": 548.234375,
+            "bottom": 319,
+            "left": 515.6875
+          },
+          {
+            "x": 552.234375,
+            "y": 277,
+            "width": 32.546875,
+            "height": 42,
+            "top": 277,
+            "right": 584.78125,
+            "bottom": 319,
+            "left": 552.234375
+          },
+          {
+            "x": 593.78125,
+            "y": 277,
+            "width": 32.546875,
+            "height": 42,
+            "top": 277,
+            "right": 626.328125,
+            "bottom": 319,
+            "left": 593.78125
+          }
+        ]
+      }
+    },
+    {
+      "name": "740x360 table plane has a nonidentity 3D transform",
+      "passed": true,
+      "details": "matrix3d(1, 0, 0, 0, 0, 0.939693, 0.34202, 0, 0, -0.34202, 0.939693, 0, -326.695, -86.3984, 0, 1)"
+    },
+    {
+      "name": "740x360 hand, drop, wall, and seats avoid 3D ancestors",
+      "passed": true,
+      "details": [
+        [
+          "#handRow",
+          false
+        ],
+        [
+          "#discardZone",
+          false
+        ],
+        [
+          "#wallHud",
+          false
+        ],
+        [
+          "#seat1",
+          false
+        ],
+        [
+          "#seat2",
+          false
+        ],
+        [
+          "#seat3",
+          false
+        ]
+      ]
+    },
+    {
+      "name": "740x360 hand stays visible",
+      "passed": true,
+      "details": [
+        {
+          "x": 113.671875,
+          "y": 277,
+          "width": 32.546875,
+          "height": 42,
+          "top": 277,
+          "right": 146.21875,
+          "bottom": 319,
+          "left": 113.671875
+        },
+        {
+          "x": 150.21875,
+          "y": 277,
+          "width": 32.546875,
+          "height": 42,
+          "top": 277,
+          "right": 182.765625,
+          "bottom": 319,
+          "left": 150.21875
+        },
+        {
+          "x": 186.765625,
+          "y": 277,
+          "width": 32.546875,
+          "height": 42,
+          "top": 277,
+          "right": 219.3125,
+          "bottom": 319,
+          "left": 186.765625
+        },
+        {
+          "x": 223.3125,
+          "y": 277,
+          "width": 32.546875,
+          "height": 42,
+          "top": 277,
+          "right": 255.859375,
+          "bottom": 319,
+          "left": 223.3125
+        },
+        {
+          "x": 259.859375,
+          "y": 277,
+          "width": 32.546875,
+          "height": 42,
+          "top": 277,
+          "right": 292.40625,
+          "bottom": 319,
+          "left": 259.859375
+        },
+        {
+          "x": 296.40625,
+          "y": 277,
+          "width": 32.546875,
+          "height": 42,
+          "top": 277,
+          "right": 328.953125,
+          "bottom": 319,
+          "left": 296.40625
+        },
+        {
+          "x": 332.953125,
+          "y": 277,
+          "width": 32.546875,
+          "height": 42,
+          "top": 277,
+          "right": 365.5,
+          "bottom": 319,
+          "left": 332.953125
+        },
+        {
+          "x": 369.5,
+          "y": 277,
+          "width": 32.546875,
+          "height": 42,
+          "top": 277,
+          "right": 402.046875,
+          "bottom": 319,
+          "left": 369.5
+        },
+        {
+          "x": 406.046875,
+          "y": 277,
+          "width": 32.546875,
+          "height": 42,
+          "top": 277,
+          "right": 438.59375,
+          "bottom": 319,
+          "left": 406.046875
+        },
+        {
+          "x": 442.59375,
+          "y": 277,
+          "width": 32.546875,
+          "height": 42,
+          "top": 277,
+          "right": 475.140625,
+          "bottom": 319,
+          "left": 442.59375
+        },
+        {
+          "x": 479.140625,
+          "y": 277,
+          "width": 32.546875,
+          "height": 42,
+          "top": 277,
+          "right": 511.6875,
+          "bottom": 319,
+          "left": 479.140625
+        },
+        {
+          "x": 515.6875,
+          "y": 277,
+          "width": 32.546875,
+          "height": 42,
+          "top": 277,
+          "right": 548.234375,
+          "bottom": 319,
+          "left": 515.6875
+        },
+        {
+          "x": 552.234375,
+          "y": 277,
+          "width": 32.546875,
+          "height": 42,
+          "top": 277,
+          "right": 584.78125,
+          "bottom": 319,
+          "left": 552.234375
+        },
+        {
+          "x": 593.78125,
+          "y": 277,
+          "width": 32.546875,
+          "height": 42,
+          "top": 277,
+          "right": 626.328125,
+          "bottom": 319,
+          "left": 593.78125
+        }
+      ]
+    },
+    {
+      "name": "1920x1080 late 20/16/16/16 rivers render all public tiles",
+      "passed": true,
+      "details": {
+        "counts": [
+          20,
+          16,
+          16,
+          16
+        ],
+        "tileCount": 68,
+        "riichiCount": 4,
+        "minimumShortSide": 23.796142578125,
+        "allFit": true,
+        "occlusions": [],
+        "integrity": true
+      }
+    },
+    {
+      "name": "1920x1080 late riichi declarations stay inside the table",
+      "passed": true,
+      "details": {
+        "counts": [
+          20,
+          16,
+          16,
+          16
+        ],
+        "tileCount": 68,
+        "riichiCount": 4,
+        "minimumShortSide": 23.796142578125,
+        "allFit": true,
+        "occlusions": [],
+        "integrity": true
+      }
+    },
+    {
+      "name": "1920x1080 late river tiles keep a 12px rendered short side",
+      "passed": true,
+      "details": {
+        "counts": [
+          20,
+          16,
+          16,
+          16
+        ],
+        "tileCount": 68,
+        "riichiCount": 4,
+        "minimumShortSide": 23.796142578125,
+        "allFit": true,
+        "occlusions": [],
+        "integrity": true
+      }
+    },
+    {
+      "name": "1920x1080 late 136-tile state keeps engine integrity",
+      "passed": true,
+      "details": null
+    },
+    {
+      "name": "1920x1080 every public river tile center avoids table UI occlusion",
+      "passed": true,
+      "details": {
+        "counts": [
+          20,
+          16,
+          16,
+          16
+        ],
+        "tileCount": 68,
+        "riichiCount": 4,
+        "minimumShortSide": 23.796142578125,
+        "allFit": true,
+        "occlusions": [],
+        "integrity": true
+      }
+    },
+    {
+      "name": "1366x768 late 20/16/16/16 rivers render all public tiles",
+      "passed": true,
+      "details": {
+        "counts": [
+          20,
+          16,
+          16,
+          16
+        ],
+        "tileCount": 68,
+        "riichiCount": 4,
+        "minimumShortSide": 17.515914916992188,
+        "allFit": true,
+        "occlusions": [],
+        "integrity": true
+      }
+    },
+    {
+      "name": "1366x768 late riichi declarations stay inside the table",
+      "passed": true,
+      "details": {
+        "counts": [
+          20,
+          16,
+          16,
+          16
+        ],
+        "tileCount": 68,
+        "riichiCount": 4,
+        "minimumShortSide": 17.515914916992188,
+        "allFit": true,
+        "occlusions": [],
+        "integrity": true
+      }
+    },
+    {
+      "name": "1366x768 late river tiles keep a 12px rendered short side",
+      "passed": true,
+      "details": {
+        "counts": [
+          20,
+          16,
+          16,
+          16
+        ],
+        "tileCount": 68,
+        "riichiCount": 4,
+        "minimumShortSide": 17.515914916992188,
+        "allFit": true,
+        "occlusions": [],
+        "integrity": true
+      }
+    },
+    {
+      "name": "1366x768 late 136-tile state keeps engine integrity",
+      "passed": true,
+      "details": null
+    },
+    {
+      "name": "1366x768 every public river tile center avoids table UI occlusion",
+      "passed": true,
+      "details": {
+        "counts": [
+          20,
+          16,
+          16,
+          16
+        ],
+        "tileCount": 68,
+        "riichiCount": 4,
+        "minimumShortSide": 17.515914916992188,
+        "allFit": true,
+        "occlusions": [],
+        "integrity": true
+      }
+    },
+    {
+      "name": "844x390 late 20/16/16/16 rivers render all public tiles",
+      "passed": true,
+      "details": {
+        "counts": [
+          20,
+          16,
+          16,
+          16
+        ],
+        "tileCount": 68,
+        "riichiCount": 4,
+        "minimumShortSide": 13.401870727539062,
+        "allFit": true,
+        "occlusions": [],
+        "integrity": true
+      }
+    },
+    {
+      "name": "844x390 late riichi declarations stay inside the table",
+      "passed": true,
+      "details": {
+        "counts": [
+          20,
+          16,
+          16,
+          16
+        ],
+        "tileCount": 68,
+        "riichiCount": 4,
+        "minimumShortSide": 13.401870727539062,
+        "allFit": true,
+        "occlusions": [],
+        "integrity": true
+      }
+    },
+    {
+      "name": "844x390 late river tiles keep a 12px rendered short side",
+      "passed": true,
+      "details": {
+        "counts": [
+          20,
+          16,
+          16,
+          16
+        ],
+        "tileCount": 68,
+        "riichiCount": 4,
+        "minimumShortSide": 13.401870727539062,
+        "allFit": true,
+        "occlusions": [],
+        "integrity": true
+      }
+    },
+    {
+      "name": "844x390 late 136-tile state keeps engine integrity",
+      "passed": true,
+      "details": null
+    },
+    {
+      "name": "844x390 every public river tile center avoids table UI occlusion",
+      "passed": true,
+      "details": {
+        "counts": [
+          20,
+          16,
+          16,
+          16
+        ],
+        "tileCount": 68,
+        "riichiCount": 4,
+        "minimumShortSide": 13.401870727539062,
+        "allFit": true,
+        "occlusions": [],
+        "integrity": true
+      }
+    },
+    {
+      "name": "740x360 late 20/16/16/16 rivers render all public tiles",
+      "passed": true,
+      "details": {
+        "counts": [
+          20,
+          16,
+          16,
+          16
+        ],
+        "tileCount": 68,
+        "riichiCount": 4,
+        "minimumShortSide": 13.361480712890625,
+        "allFit": true,
+        "occlusions": [],
+        "integrity": true
+      }
+    },
+    {
+      "name": "740x360 late riichi declarations stay inside the table",
+      "passed": true,
+      "details": {
+        "counts": [
+          20,
+          16,
+          16,
+          16
+        ],
+        "tileCount": 68,
+        "riichiCount": 4,
+        "minimumShortSide": 13.361480712890625,
+        "allFit": true,
+        "occlusions": [],
+        "integrity": true
+      }
+    },
+    {
+      "name": "740x360 late river tiles keep a 12px rendered short side",
+      "passed": true,
+      "details": {
+        "counts": [
+          20,
+          16,
+          16,
+          16
+        ],
+        "tileCount": 68,
+        "riichiCount": 4,
+        "minimumShortSide": 13.361480712890625,
+        "allFit": true,
+        "occlusions": [],
+        "integrity": true
+      }
+    },
+    {
+      "name": "740x360 late 136-tile state keeps engine integrity",
+      "passed": true,
+      "details": null
+    },
+    {
+      "name": "740x360 every public river tile center avoids table UI occlusion",
+      "passed": true,
+      "details": {
+        "counts": [
+          20,
+          16,
+          16,
+          16
+        ],
+        "tileCount": 68,
+        "riichiCount": 4,
+        "minimumShortSide": 13.361480712890625,
+        "allFit": true,
+        "occlusions": [],
+        "integrity": true
+      }
+    },
+    {
+      "name": "CPU concealed banks expose no face identities",
+      "passed": true,
+      "details": null
+    },
+    {
+      "name": "one physical click only selects a tile",
+      "passed": true,
+      "details": null
+    },
+    {
+      "name": "delayed re-click of the same physical tile discards once",
+      "passed": true,
+      "details": null
+    },
+    {
+      "name": "repeat release path adds no extra discard",
+      "passed": true,
+      "details": null
+    },
+    {
+      "name": "valid flat drop discards exactly once",
+      "passed": true,
+      "details": null
+    },
+    {
+      "name": "outside drop adds no discard",
+      "passed": true,
+      "details": null
+    },
+    {
+      "name": "cancelled drop adds no discard",
+      "passed": true,
+      "details": null
+    },
+    {
+      "name": "first real touch only selects a tile",
+      "passed": true,
+      "details": null
+    },
+    {
+      "name": "two real touch events discard the physical tile once",
+      "passed": true,
+      "details": null
+    }
+  ]
+}

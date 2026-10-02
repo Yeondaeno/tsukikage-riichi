@@ -20,6 +20,7 @@ def main() -> None:
         ("/*__SCENE_CSS__*/", "scenes.css"),
         ("/*__LAYOUT_CSS__*/", "layout-fixes.css"),
         ("/*__MOBILE_CSS__*/", "mobile-table.css"),
+        ("/*__PERSPECTIVE_CSS__*/", "table-perspective.css"),
         ("/*__POLICY__*/", "policy.js"),
         ("/*__CHARACTERS__*/", "characters.js"),
         ("/*__INPUT__*/", "input.js"),

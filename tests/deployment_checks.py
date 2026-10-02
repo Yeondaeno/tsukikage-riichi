@@ -1,0 +1,43 @@
+import json,os,time,shutil
+from pathlib import Path
+URL=os.environ['GAME_URL']
+OUT=Path(os.environ['QA_OUTPUT']);OUT.mkdir(parents=True,exist_ok=True)
+checks=[]
+def check(name,ok,details=None):
+    checks.append({'name':name,'passed':bool(ok),'details':details})
+    if not ok: raise AssertionError(name)
+def shot(name): shutil.copyfile(capture_screenshot(),OUT/(name+'.png'))
+def click(selector):
+    js("document.querySelector("+json.dumps(selector)+").scrollIntoView({block:'center'})")
+    shot('before-'+str(len(checks)))
+    box=js("(()=>{let b=document.querySelector("+json.dumps(selector)+").getBoundingClientRect();return{x:b.x+b.width/2,y:b.y+b.height/2}})()")
+    click_at_xy(box['x'],box['y'])
+new_tab(URL);activate_tab(current_tab());cdp('Emulation.setFocusEmulationEnabled',enabled=True);wait_for_load()
+cdp('Emulation.setDeviceMetricsOverride',width=1366,height=768,deviceScaleFactor=1,mobile=False)
+check('hosted v3 bootstraps',js("typeof Tsukikage==='object'&&Characters.manifest.version===3&&document.getElementById('modalCard').dataset.modalType==='welcome'"))
+shot('deployed-welcome')
+click('[data-act="start"]')
+check('native start opens one human plus three CPUs',js("document.getElementById('modal').hidden&&document.querySelectorAll('#handRow button[data-tile]').length===14&&[1,2,3].every(i=>document.getElementById('seat'+i).textContent.includes('CPU'))"))
+check('hosted perspective table and flat hand/drop load',js("getComputedStyle(document.getElementById('tablePlane')).transform.startsWith('matrix3d(')&&!getComputedStyle(document.getElementById('discardZone')).transform.startsWith('matrix3d(')&&!getComputedStyle(document.getElementById('handRow')).transform.startsWith('matrix3d(')"))
+shot('deployed-desktop')
+before=js('Tsukikage.snapshot()');tile=js("document.querySelector('#handRow button:not(:disabled)').dataset.tile")
+click('[data-tile="'+tile+'"]')
+check('first live click selects only',len(js('Tsukikage.snapshot().publicPlayers[0].river'))==0)
+time.sleep(.9);click('[data-tile="'+tile+'"]')
+check('delayed live re-click discards once',js("Tsukikage.snapshot().publicPlayers[0].river.length===1&&Tsukikage.snapshot().publicPlayers[0].river[0].id==="+tile))
+images=js("Promise.all(Characters.manifest.characters.flatMap(c=>[c.base,c.cutin,c.special,...Object.values(c.expressions)]).map(src=>new Promise(resolve=>{let i=new Image();i.onload=()=>resolve({src,ok:i.naturalWidth>0});i.onerror=()=>resolve({src,ok:false});i.src=src})))")
+check('all forty deployed character images load',len(images)==40 and all(x['ok'] for x in images))
+audio=js("Promise.all(Object.values(Characters.manifest.audio).map(src=>new Promise(resolve=>{let a=new Audio(src);a.onloadedmetadata=()=>resolve({src,duration:a.duration});a.onerror=()=>resolve({src,duration:0})})))")
+check('all seven deployed WAV files decode',len(audio)==7 and all(x['duration']>0 for x in audio))
+public=js('Tsukikage.snapshot()')
+check('normal hosted snapshot excludes hidden CPU hands and wall','wall' not in public and 'players' not in public and 'dead' not in public)
+cdp('Emulation.setDeviceMetricsOverride',width=844,height=390,deviceScaleFactor=1,mobile=True)
+cdp('Emulation.setTouchEmulationEnabled',enabled=True,maxTouchPoints=1)
+check('hosted landscape hand fits viewport',js("document.body.scrollWidth<=844&&document.body.scrollHeight<=390&&[...document.querySelectorAll('#handRow button')].every(e=>{let b=e.getBoundingClientRect();return b.left>=0&&b.right<=844&&b.bottom<=390})"))
+shot('deployed-landscape')
+js("Tsukikage.pause(true);window.previewDone=0;Tsukikage.visuals.play(Tsukikage.visuals.sample({tier:'mangan',character:1}),()=>window.previewDone++,{demo:true})")
+time.sleep(.35);shot('deployed-cut-in');js('Tsukikage.visuals.skip();Tsukikage.visuals.skip()')
+check('hosted cut-in preview skips once and unlocks',js("previewDone===1&&!Tsukikage.visuals.active&&!document.querySelector('.app').inert"))
+record={'runAt':time.strftime('%Y-%m-%dT%H:%M:%S%z'),'url':URL,'environment':'Windows isolated Chromium; mobile size and touch emulated','checks':checks,'images':images,'audio':audio}
+(OUT/'deployment-browser.json').write_text(json.dumps(record,ensure_ascii=False,indent=2),encoding='utf-8')
+print(json.dumps({'checks':len(checks),'allPassed':all(x['passed'] for x in checks)}))
