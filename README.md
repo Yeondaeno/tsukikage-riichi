@@ -2,6 +2,8 @@
 
 히나와 CPU 아카네·시즈쿠·코하루가 함께하는 4인 리치마작입니다. 실제 캐릭터 이미지와 표정, 화료 컷인, 효과음, 규칙 엔진을 포함합니다.
 
+[브라우저에서 바로 플레이](https://yeondaeno.github.io/tsukikage-riichi/)
+
 ## 바로 실행
 
 배포 ZIP을 풀고 `index.html`을 Chrome 또는 Edge에서 여세요. `assets` 폴더를 옆에 그대로 두어야 합니다. 휴대폰은 정적 서버에 올린 전체 배포 폴더에 접속하고 가로 화면으로 사용합니다. GitHub Pages 자동 배포 설정은 [배포 안내](docs/DEPLOYMENT.md)에 있습니다.

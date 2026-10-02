@@ -1,0 +1,1165 @@
+{
+  "verifiedAt": "2026-10-02T13:48:14+0900",
+  "repository": "https://github.com/Yeondaeno/tsukikage-riichi",
+  "site": "https://yeondaeno.github.io/tsukikage-riichi/",
+  "deployedCommit": "4aaeda73728d7f93823f79ab06c7d475a6dc8935",
+  "workflowRun": "https://github.com/Yeondaeno/tsukikage-riichi/actions/runs/36965939451",
+  "workflowResult": "success",
+  "browser": {
+    "runAt": "2026-10-02T13:48:14+0900",
+    "url": "https://yeondaeno.github.io/tsukikage-riichi/",
+    "environment": "Windows isolated Chromium; mobile size and touch emulated",
+    "checks": [
+      {
+        "name": "hosted v3 bootstraps",
+        "passed": true,
+        "details": null
+      },
+      {
+        "name": "native start opens one human plus three CPUs",
+        "passed": true,
+        "details": null
+      },
+      {
+        "name": "first live click selects only",
+        "passed": true,
+        "details": null
+      },
+      {
+        "name": "delayed live re-click discards once",
+        "passed": true,
+        "details": null
+      },
+      {
+        "name": "all forty deployed character images load",
+        "passed": true,
+        "details": null
+      },
+      {
+        "name": "all seven deployed WAV files decode",
+        "passed": true,
+        "details": null
+      },
+      {
+        "name": "normal hosted snapshot excludes hidden CPU hands and wall",
+        "passed": true,
+        "details": null
+      },
+      {
+        "name": "hosted landscape hand fits viewport",
+        "passed": true,
+        "details": null
+      },
+      {
+        "name": "hosted cut-in preview skips once and unlocks",
+        "passed": true,
+        "details": null
+      }
+    ],
+    "images": [
+      {
+        "src": "assets/characters/hina/base.webp",
+        "ok": true
+      },
+      {
+        "src": "assets/characters/hina/cutin.webp",
+        "ok": true
+      },
+      {
+        "src": "assets/characters/hina/special.webp",
+        "ok": true
+      },
+      {
+        "src": "assets/characters/hina/neutral.webp",
+        "ok": true
+      },
+      {
+        "src": "assets/characters/hina/smile.webp",
+        "ok": true
+      },
+      {
+        "src": "assets/characters/hina/thinking.webp",
+        "ok": true
+      },
+      {
+        "src": "assets/characters/hina/surprise.webp",
+        "ok": true
+      },
+      {
+        "src": "assets/characters/hina/riichi.webp",
+        "ok": true
+      },
+      {
+        "src": "assets/characters/hina/win.webp",
+        "ok": true
+      },
+      {
+        "src": "assets/characters/hina/loss.webp",
+        "ok": true
+      },
+      {
+        "src": "assets/characters/akane/base.webp",
+        "ok": true
+      },
+      {
+        "src": "assets/characters/akane/cutin.webp",
+        "ok": true
+      },
+      {
+        "src": "assets/characters/akane/special.webp",
+        "ok": true
+      },
+      {
+        "src": "assets/characters/akane/neutral.webp",
+        "ok": true
+      },
+      {
+        "src": "assets/characters/akane/smile.webp",
+        "ok": true
+      },
+      {
+        "src": "assets/characters/akane/thinking.webp",
+        "ok": true
+      },
+      {
+        "src": "assets/characters/akane/surprise.webp",
+        "ok": true
+      },
+      {
+        "src": "assets/characters/akane/riichi.webp",
+        "ok": true
+      },
+      {
+        "src": "assets/characters/akane/win.webp",
+        "ok": true
+      },
+      {
+        "src": "assets/characters/akane/loss.webp",
+        "ok": true
+      },
+      {
+        "src": "assets/characters/shizuku/base.webp",
+        "ok": true
+      },
+      {
+        "src": "assets/characters/shizuku/cutin.webp",
+        "ok": true
+      },
+      {
+        "src": "assets/characters/shizuku/special.webp",
+        "ok": true
+      },
+      {
+        "src": "assets/characters/shizuku/neutral.webp",
+        "ok": true
+      },
+      {
+        "src": "assets/characters/shizuku/smile.webp",
+        "ok": true
+      },
+      {
+        "src": "assets/characters/shizuku/thinking.webp",
+        "ok": true
+      },
+      {
+        "src": "assets/characters/shizuku/surprise.webp",
+        "ok": true
+      },
+      {
+        "src": "assets/characters/shizuku/riichi.webp",
+        "ok": true
+      },
+      {
+        "src": "assets/characters/shizuku/win.webp",
+        "ok": true
+      },
+      {
+        "src": "assets/characters/shizuku/loss.webp",
+        "ok": true
+      },
+      {
+        "src": "assets/characters/koharu/base.webp",
+        "ok": true
+      },
+      {
+        "src": "assets/characters/koharu/cutin.webp",
+        "ok": true
+      },
+      {
+        "src": "assets/characters/koharu/special.webp",
+        "ok": true
+      },
+      {
+        "src": "assets/characters/koharu/neutral.webp",
+        "ok": true
+      },
+      {
+        "src": "assets/characters/koharu/smile.webp",
+        "ok": true
+      },
+      {
+        "src": "assets/characters/koharu/thinking.webp",
+        "ok": true
+      },
+      {
+        "src": "assets/characters/koharu/surprise.webp",
+        "ok": true
+      },
+      {
+        "src": "assets/characters/koharu/riichi.webp",
+        "ok": true
+      },
+      {
+        "src": "assets/characters/koharu/win.webp",
+        "ok": true
+      },
+      {
+        "src": "assets/characters/koharu/loss.webp",
+        "ok": true
+      }
+    ],
+    "audio": [
+      {
+        "src": "assets/audio/tile.wav",
+        "duration": 0.43
+      },
+      {
+        "src": "assets/audio/select.wav",
+        "duration": 0.339958
+      },
+      {
+        "src": "assets/audio/riichi.wav",
+        "duration": 0.52
+      },
+      {
+        "src": "assets/audio/call.wav",
+        "duration": 0.43
+      },
+      {
+        "src": "assets/audio/win.wav",
+        "duration": 0.7
+      },
+      {
+        "src": "assets/audio/draw.wav",
+        "duration": 0.43
+      },
+      {
+        "src": "assets/audio/rank.wav",
+        "duration": 0.43
+      }
+    ]
+  },
+  "http": {
+    "runAt": "2026-10-02T13:50:27+0900",
+    "url": "https://yeondaeno.github.io/tsukikage-riichi/",
+    "files": 90,
+    "allMatch": true,
+    "results": [
+      {
+        "path": "index.html",
+        "status": 200,
+        "mime": "text/html; charset=utf-8",
+        "localSHA256": "f010532f57bc477029b0b9caf322775ed194f5cd9135f2a87aa6c247996ba20a",
+        "sha256": "00cca3d1acd58f3ead7bb72e035d54ce4e3c78585362fa35cbd6566ee735dea5",
+        "byteExact": false,
+        "matches": true,
+        "comparison": "CRLF/LF normalization"
+      },
+      {
+        "path": "assets/manifest.json",
+        "status": 200,
+        "mime": "application/json; charset=utf-8",
+        "localSHA256": "47e8d08219a255b79452ffeea549513ab5e0e4cdb532faf607918158b772567e",
+        "sha256": "c5490e848754324f0832e88a4275f354d508c7984e55254589f56d7cfc724654",
+        "byteExact": false,
+        "matches": true,
+        "comparison": "CRLF/LF normalization"
+      },
+      {
+        "path": "assets/README.md",
+        "status": 200,
+        "mime": "text/markdown; charset=utf-8",
+        "localSHA256": "041f1c91346fd0e06273002ee3d3d7bc7d699c465d365c12608e346c12df5190",
+        "sha256": "041f1c91346fd0e06273002ee3d3d7bc7d699c465d365c12608e346c12df5190",
+        "byteExact": true,
+        "matches": true,
+        "comparison": "exact bytes"
+      },
+      {
+        "path": "assets/audio/call.wav",
+        "status": 200,
+        "mime": "audio/wav",
+        "localSHA256": "2555b00143779d3ee2e9c429352f76a25b8a6e2c601d3a576300ee54d16a79ef",
+        "sha256": "2555b00143779d3ee2e9c429352f76a25b8a6e2c601d3a576300ee54d16a79ef",
+        "byteExact": true,
+        "matches": true,
+        "comparison": "exact bytes"
+      },
+      {
+        "path": "assets/audio/draw.wav",
+        "status": 200,
+        "mime": "audio/wav",
+        "localSHA256": "8bb2d828c7c9d672f21f1ef82ea1c662ee65ff9ed92d71075d287d2e7662dbe3",
+        "sha256": "8bb2d828c7c9d672f21f1ef82ea1c662ee65ff9ed92d71075d287d2e7662dbe3",
+        "byteExact": true,
+        "matches": true,
+        "comparison": "exact bytes"
+      },
+      {
+        "path": "assets/audio/rank.wav",
+        "status": 200,
+        "mime": "audio/wav",
+        "localSHA256": "6ca57a275b458e70499e9a9e41c6fa6183b0d349d68b08e37af98c3784134671",
+        "sha256": "6ca57a275b458e70499e9a9e41c6fa6183b0d349d68b08e37af98c3784134671",
+        "byteExact": true,
+        "matches": true,
+        "comparison": "exact bytes"
+      },
+      {
+        "path": "assets/audio/riichi.wav",
+        "status": 200,
+        "mime": "audio/wav",
+        "localSHA256": "b013c8296baf5991ff54361a54c453e41b2b6cea655d5b86320921c366d69237",
+        "sha256": "b013c8296baf5991ff54361a54c453e41b2b6cea655d5b86320921c366d69237",
+        "byteExact": true,
+        "matches": true,
+        "comparison": "exact bytes"
+      },
+      {
+        "path": "assets/audio/select.wav",
+        "status": 200,
+        "mime": "audio/wav",
+        "localSHA256": "ee59ed630813548e95eff1c932870a6d0a292d3cea975787c77e8b2690039cb8",
+        "sha256": "ee59ed630813548e95eff1c932870a6d0a292d3cea975787c77e8b2690039cb8",
+        "byteExact": true,
+        "matches": true,
+        "comparison": "exact bytes"
+      },
+      {
+        "path": "assets/audio/tile.wav",
+        "status": 200,
+        "mime": "audio/wav",
+        "localSHA256": "4ad01b62d7eb27474cd402ef2eb71f1ef3d75fcd6354abfd9def9a563fc6bfdc",
+        "sha256": "4ad01b62d7eb27474cd402ef2eb71f1ef3d75fcd6354abfd9def9a563fc6bfdc",
+        "byteExact": true,
+        "matches": true,
+        "comparison": "exact bytes"
+      },
+      {
+        "path": "assets/audio/win.wav",
+        "status": 200,
+        "mime": "audio/wav",
+        "localSHA256": "bb9b9d2996cf2fe52a32a6f6e688f4f50d58e0b9fa4640ef0fdaf8dfa8e4ec11",
+        "sha256": "bb9b9d2996cf2fe52a32a6f6e688f4f50d58e0b9fa4640ef0fdaf8dfa8e4ec11",
+        "byteExact": true,
+        "matches": true,
+        "comparison": "exact bytes"
+      },
+      {
+        "path": "assets/characters/akane/base.webp",
+        "status": 200,
+        "mime": "image/webp",
+        "localSHA256": "f77bc33001f7b3f8a0553d3714cc80ae1ce85cea6d0ae33055993f053b13d941",
+        "sha256": "f77bc33001f7b3f8a0553d3714cc80ae1ce85cea6d0ae33055993f053b13d941",
+        "byteExact": true,
+        "matches": true,
+        "comparison": "exact bytes"
+      },
+      {
+        "path": "assets/characters/akane/cutin.webp",
+        "status": 200,
+        "mime": "image/webp",
+        "localSHA256": "570ad02e89f7e0ff07feb45dad1b3c23221a88f596101668dfb7e8280c210257",
+        "sha256": "570ad02e89f7e0ff07feb45dad1b3c23221a88f596101668dfb7e8280c210257",
+        "byteExact": true,
+        "matches": true,
+        "comparison": "exact bytes"
+      },
+      {
+        "path": "assets/characters/akane/loss.webp",
+        "status": 200,
+        "mime": "image/webp",
+        "localSHA256": "f0375d49fe74d6782486e10ca5b7064a96266e0148818932fdd31cfc49b9515c",
+        "sha256": "f0375d49fe74d6782486e10ca5b7064a96266e0148818932fdd31cfc49b9515c",
+        "byteExact": true,
+        "matches": true,
+        "comparison": "exact bytes"
+      },
+      {
+        "path": "assets/characters/akane/neutral.webp",
+        "status": 200,
+        "mime": "image/webp",
+        "localSHA256": "227bfa543e56f051b49dabebc070667314bd5a4b9617bd99a74a36547836bfa6",
+        "sha256": "227bfa543e56f051b49dabebc070667314bd5a4b9617bd99a74a36547836bfa6",
+        "byteExact": true,
+        "matches": true,
+        "comparison": "exact bytes"
+      },
+      {
+        "path": "assets/characters/akane/riichi.webp",
+        "status": 200,
+        "mime": "image/webp",
+        "localSHA256": "6ecef624e433f8f4ad6fb39eff7d8d1ec304ae4be0a6fd6a3d058ae70863f20e",
+        "sha256": "6ecef624e433f8f4ad6fb39eff7d8d1ec304ae4be0a6fd6a3d058ae70863f20e",
+        "byteExact": true,
+        "matches": true,
+        "comparison": "exact bytes"
+      },
+      {
+        "path": "assets/characters/akane/smile.webp",
+        "status": 200,
+        "mime": "image/webp",
+        "localSHA256": "bbecc6ef7bbd3f2910509a89e0a5d84e4f0d285f7becc4672ed570d65f39ca17",
+        "sha256": "bbecc6ef7bbd3f2910509a89e0a5d84e4f0d285f7becc4672ed570d65f39ca17",
+        "byteExact": true,
+        "matches": true,
+        "comparison": "exact bytes"
+      },
+      {
+        "path": "assets/characters/akane/special.webp",
+        "status": 200,
+        "mime": "image/webp",
+        "localSHA256": "bbc75ae3735f2dd0152e6d6d38daff603a837a97e7fbea1034286fa30ed713e8",
+        "sha256": "bbc75ae3735f2dd0152e6d6d38daff603a837a97e7fbea1034286fa30ed713e8",
+        "byteExact": true,
+        "matches": true,
+        "comparison": "exact bytes"
+      },
+      {
+        "path": "assets/characters/akane/surprise.webp",
+        "status": 200,
+        "mime": "image/webp",
+        "localSHA256": "8fd4c90461e332e83bc1b34e81653fe23656a52b37e10c8a7c21675e1a90f75d",
+        "sha256": "8fd4c90461e332e83bc1b34e81653fe23656a52b37e10c8a7c21675e1a90f75d",
+        "byteExact": true,
+        "matches": true,
+        "comparison": "exact bytes"
+      },
+      {
+        "path": "assets/characters/akane/thinking.webp",
+        "status": 200,
+        "mime": "image/webp",
+        "localSHA256": "b92c40dd57d2a7ed1569ebeb19eb3a2457f4bc08c19548df603834869642a248",
+        "sha256": "b92c40dd57d2a7ed1569ebeb19eb3a2457f4bc08c19548df603834869642a248",
+        "byteExact": true,
+        "matches": true,
+        "comparison": "exact bytes"
+      },
+      {
+        "path": "assets/characters/akane/win.webp",
+        "status": 200,
+        "mime": "image/webp",
+        "localSHA256": "b43577a6c7e259a6032d6d6afda2c4f1222e26c6a7ea942e08d452a1fe27ab26",
+        "sha256": "b43577a6c7e259a6032d6d6afda2c4f1222e26c6a7ea942e08d452a1fe27ab26",
+        "byteExact": true,
+        "matches": true,
+        "comparison": "exact bytes"
+      },
+      {
+        "path": "assets/characters/hina/base.webp",
+        "status": 200,
+        "mime": "image/webp",
+        "localSHA256": "f8566a71e9d70526dcb2153674fb60c17e8f2d2e8412e591cb25fa5059590433",
+        "sha256": "f8566a71e9d70526dcb2153674fb60c17e8f2d2e8412e591cb25fa5059590433",
+        "byteExact": true,
+        "matches": true,
+        "comparison": "exact bytes"
+      },
+      {
+        "path": "assets/characters/hina/cutin.webp",
+        "status": 200,
+        "mime": "image/webp",
+        "localSHA256": "dd9ba088441b27e95909693b8bf24e0b187715bbd56fc33b53539e65f55bc196",
+        "sha256": "dd9ba088441b27e95909693b8bf24e0b187715bbd56fc33b53539e65f55bc196",
+        "byteExact": true,
+        "matches": true,
+        "comparison": "exact bytes"
+      },
+      {
+        "path": "assets/characters/hina/loss.webp",
+        "status": 200,
+        "mime": "image/webp",
+        "localSHA256": "b7684aee8e1aac67fed6b3e20f55ec83a9d26e74e6dbeedd4f38e164229c88ca",
+        "sha256": "b7684aee8e1aac67fed6b3e20f55ec83a9d26e74e6dbeedd4f38e164229c88ca",
+        "byteExact": true,
+        "matches": true,
+        "comparison": "exact bytes"
+      },
+      {
+        "path": "assets/characters/hina/neutral.webp",
+        "status": 200,
+        "mime": "image/webp",
+        "localSHA256": "be5d23d2d128cfb9e59700fafdd51219e7d940e94c32376dbed133eec8d4dd02",
+        "sha256": "be5d23d2d128cfb9e59700fafdd51219e7d940e94c32376dbed133eec8d4dd02",
+        "byteExact": true,
+        "matches": true,
+        "comparison": "exact bytes"
+      },
+      {
+        "path": "assets/characters/hina/riichi.webp",
+        "status": 200,
+        "mime": "image/webp",
+        "localSHA256": "00146809b502b031a25e9dcba3333d52a03e9cfe7392f5d3287a516683b1c4dd",
+        "sha256": "00146809b502b031a25e9dcba3333d52a03e9cfe7392f5d3287a516683b1c4dd",
+        "byteExact": true,
+        "matches": true,
+        "comparison": "exact bytes"
+      },
+      {
+        "path": "assets/characters/hina/smile.webp",
+        "status": 200,
+        "mime": "image/webp",
+        "localSHA256": "9dd5d22eff56caa4c7e8f5c12eaf360c90784467673a7aa18ef18d73be5ebb27",
+        "sha256": "9dd5d22eff56caa4c7e8f5c12eaf360c90784467673a7aa18ef18d73be5ebb27",
+        "byteExact": true,
+        "matches": true,
+        "comparison": "exact bytes"
+      },
+      {
+        "path": "assets/characters/hina/special.webp",
+        "status": 200,
+        "mime": "image/webp",
+        "localSHA256": "cf11caf5c73d0c679b1a95b63a1d530968c7ee878bfe17cb092aa1c2b7021f51",
+        "sha256": "cf11caf5c73d0c679b1a95b63a1d530968c7ee878bfe17cb092aa1c2b7021f51",
+        "byteExact": true,
+        "matches": true,
+        "comparison": "exact bytes"
+      },
+      {
+        "path": "assets/characters/hina/surprise.webp",
+        "status": 200,
+        "mime": "image/webp",
+        "localSHA256": "1a075e147cd19668ade89d36b59d89ba79abdaaa44464d03aaa56cf203f48ead",
+        "sha256": "1a075e147cd19668ade89d36b59d89ba79abdaaa44464d03aaa56cf203f48ead",
+        "byteExact": true,
+        "matches": true,
+        "comparison": "exact bytes"
+      },
+      {
+        "path": "assets/characters/hina/thinking.webp",
+        "status": 200,
+        "mime": "image/webp",
+        "localSHA256": "63a53b866804812cd179f5b9e5ae995cacd923663478b46be7cf0ce9769aed9a",
+        "sha256": "63a53b866804812cd179f5b9e5ae995cacd923663478b46be7cf0ce9769aed9a",
+        "byteExact": true,
+        "matches": true,
+        "comparison": "exact bytes"
+      },
+      {
+        "path": "assets/characters/hina/win.webp",
+        "status": 200,
+        "mime": "image/webp",
+        "localSHA256": "a6fcc96fcfc5b3e2362bd8d1ad45f0fa53f6ab30b2c43638c2735097922a0122",
+        "sha256": "a6fcc96fcfc5b3e2362bd8d1ad45f0fa53f6ab30b2c43638c2735097922a0122",
+        "byteExact": true,
+        "matches": true,
+        "comparison": "exact bytes"
+      },
+      {
+        "path": "assets/characters/koharu/base.webp",
+        "status": 200,
+        "mime": "image/webp",
+        "localSHA256": "47ef255d5e157271b0c858b819ef4a68d9d371923278d2274712074329b2a450",
+        "sha256": "47ef255d5e157271b0c858b819ef4a68d9d371923278d2274712074329b2a450",
+        "byteExact": true,
+        "matches": true,
+        "comparison": "exact bytes"
+      },
+      {
+        "path": "assets/characters/koharu/cutin.webp",
+        "status": 200,
+        "mime": "image/webp",
+        "localSHA256": "769821249c7cdad713df103bb6e3d40afa6ccb2f6860ec82f6e5535e6ee7074a",
+        "sha256": "769821249c7cdad713df103bb6e3d40afa6ccb2f6860ec82f6e5535e6ee7074a",
+        "byteExact": true,
+        "matches": true,
+        "comparison": "exact bytes"
+      },
+      {
+        "path": "assets/characters/koharu/loss.webp",
+        "status": 200,
+        "mime": "image/webp",
+        "localSHA256": "5f72e7b0f66653f44ac312fc5d66f17e7d410f3be0989c924f2fc00468c63df6",
+        "sha256": "5f72e7b0f66653f44ac312fc5d66f17e7d410f3be0989c924f2fc00468c63df6",
+        "byteExact": true,
+        "matches": true,
+        "comparison": "exact bytes"
+      },
+      {
+        "path": "assets/characters/koharu/neutral.webp",
+        "status": 200,
+        "mime": "image/webp",
+        "localSHA256": "37d24dc4b38bb6d28743dd551fbcfc48519003a3f0ecd15f0640fe1421f23069",
+        "sha256": "37d24dc4b38bb6d28743dd551fbcfc48519003a3f0ecd15f0640fe1421f23069",
+        "byteExact": true,
+        "matches": true,
+        "comparison": "exact bytes"
+      },
+      {
+        "path": "assets/characters/koharu/riichi.webp",
+        "status": 200,
+        "mime": "image/webp",
+        "localSHA256": "f245bf2e65b4a59feba6e70fe0505df8b1ce722e7d32e4b0e92740035672207d",
+        "sha256": "f245bf2e65b4a59feba6e70fe0505df8b1ce722e7d32e4b0e92740035672207d",
+        "byteExact": true,
+        "matches": true,
+        "comparison": "exact bytes"
+      },
+      {
+        "path": "assets/characters/koharu/smile.webp",
+        "status": 200,
+        "mime": "image/webp",
+        "localSHA256": "9836c545cf77269367ed4ad612500274cb36215a2abb0807ebcd983fc01fef3e",
+        "sha256": "9836c545cf77269367ed4ad612500274cb36215a2abb0807ebcd983fc01fef3e",
+        "byteExact": true,
+        "matches": true,
+        "comparison": "exact bytes"
+      },
+      {
+        "path": "assets/characters/koharu/special.webp",
+        "status": 200,
+        "mime": "image/webp",
+        "localSHA256": "7263cb597accd94e0b057c93a756745d51944de70e572b124d73b87c5e6e4ffb",
+        "sha256": "7263cb597accd94e0b057c93a756745d51944de70e572b124d73b87c5e6e4ffb",
+        "byteExact": true,
+        "matches": true,
+        "comparison": "exact bytes"
+      },
+      {
+        "path": "assets/characters/koharu/surprise.webp",
+        "status": 200,
+        "mime": "image/webp",
+        "localSHA256": "4665deba3bad76e6f713ab5310a6511625441f3cec5c77c90383430c97a055fd",
+        "sha256": "4665deba3bad76e6f713ab5310a6511625441f3cec5c77c90383430c97a055fd",
+        "byteExact": true,
+        "matches": true,
+        "comparison": "exact bytes"
+      },
+      {
+        "path": "assets/characters/koharu/thinking.webp",
+        "status": 200,
+        "mime": "image/webp",
+        "localSHA256": "935ebe053a98232f499f8e848357cc4fbbebe28df52510b6e808eecd0fbe5bde",
+        "sha256": "935ebe053a98232f499f8e848357cc4fbbebe28df52510b6e808eecd0fbe5bde",
+        "byteExact": true,
+        "matches": true,
+        "comparison": "exact bytes"
+      },
+      {
+        "path": "assets/characters/koharu/win.webp",
+        "status": 200,
+        "mime": "image/webp",
+        "localSHA256": "32b724addee3728cb83a5bd97d52c2347c14c09f8a3cf2a40878910d8a0bc84c",
+        "sha256": "32b724addee3728cb83a5bd97d52c2347c14c09f8a3cf2a40878910d8a0bc84c",
+        "byteExact": true,
+        "matches": true,
+        "comparison": "exact bytes"
+      },
+      {
+        "path": "assets/characters/shizuku/base.webp",
+        "status": 200,
+        "mime": "image/webp",
+        "localSHA256": "ff6ad51adf6a019a66897c8737c49000ade47f20b209c5ac4c9fbeef66ebbada",
+        "sha256": "ff6ad51adf6a019a66897c8737c49000ade47f20b209c5ac4c9fbeef66ebbada",
+        "byteExact": true,
+        "matches": true,
+        "comparison": "exact bytes"
+      },
+      {
+        "path": "assets/characters/shizuku/cutin.webp",
+        "status": 200,
+        "mime": "image/webp",
+        "localSHA256": "944913452baa5b4ac287b5e523387d52c9ba220b8d1f58d947d675376662bc61",
+        "sha256": "944913452baa5b4ac287b5e523387d52c9ba220b8d1f58d947d675376662bc61",
+        "byteExact": true,
+        "matches": true,
+        "comparison": "exact bytes"
+      },
+      {
+        "path": "assets/characters/shizuku/loss.webp",
+        "status": 200,
+        "mime": "image/webp",
+        "localSHA256": "65025531289e27591c87cd4cc74c13197e41411cf77a0f47fac85f661efcd600",
+        "sha256": "65025531289e27591c87cd4cc74c13197e41411cf77a0f47fac85f661efcd600",
+        "byteExact": true,
+        "matches": true,
+        "comparison": "exact bytes"
+      },
+      {
+        "path": "assets/characters/shizuku/neutral.webp",
+        "status": 200,
+        "mime": "image/webp",
+        "localSHA256": "77f71bf495c5febf2f54985b1740b5697101cdafc2c755a03860af5d3fcf10dd",
+        "sha256": "77f71bf495c5febf2f54985b1740b5697101cdafc2c755a03860af5d3fcf10dd",
+        "byteExact": true,
+        "matches": true,
+        "comparison": "exact bytes"
+      },
+      {
+        "path": "assets/characters/shizuku/riichi.webp",
+        "status": 200,
+        "mime": "image/webp",
+        "localSHA256": "5a979c9c483115d9b55859c6acce8bafeaddfb1502fab74df80bbe1ee0a4d1c5",
+        "sha256": "5a979c9c483115d9b55859c6acce8bafeaddfb1502fab74df80bbe1ee0a4d1c5",
+        "byteExact": true,
+        "matches": true,
+        "comparison": "exact bytes"
+      },
+      {
+        "path": "assets/characters/shizuku/smile.webp",
+        "status": 200,
+        "mime": "image/webp",
+        "localSHA256": "158217892acfc0edd65855eb74f61280c877c9eb2c4c45b7fd5a459170c7a200",
+        "sha256": "158217892acfc0edd65855eb74f61280c877c9eb2c4c45b7fd5a459170c7a200",
+        "byteExact": true,
+        "matches": true,
+        "comparison": "exact bytes"
+      },
+      {
+        "path": "assets/characters/shizuku/special.webp",
+        "status": 200,
+        "mime": "image/webp",
+        "localSHA256": "8a9be9dafea168df4a203d5c1d9cb919b35046d4e26ecf8d70d0e8d121b07408",
+        "sha256": "8a9be9dafea168df4a203d5c1d9cb919b35046d4e26ecf8d70d0e8d121b07408",
+        "byteExact": true,
+        "matches": true,
+        "comparison": "exact bytes"
+      },
+      {
+        "path": "assets/characters/shizuku/surprise.webp",
+        "status": 200,
+        "mime": "image/webp",
+        "localSHA256": "ea5e8adfe77791e33740deedabffab7735e32f9c459c9921eb7858e0ee9877ca",
+        "sha256": "ea5e8adfe77791e33740deedabffab7735e32f9c459c9921eb7858e0ee9877ca",
+        "byteExact": true,
+        "matches": true,
+        "comparison": "exact bytes"
+      },
+      {
+        "path": "assets/characters/shizuku/thinking.webp",
+        "status": 200,
+        "mime": "image/webp",
+        "localSHA256": "1110cc5d49067e4918812f76fd923aa953b49d0bda0318bc82bed830dee3599f",
+        "sha256": "1110cc5d49067e4918812f76fd923aa953b49d0bda0318bc82bed830dee3599f",
+        "byteExact": true,
+        "matches": true,
+        "comparison": "exact bytes"
+      },
+      {
+        "path": "assets/characters/shizuku/win.webp",
+        "status": 200,
+        "mime": "image/webp",
+        "localSHA256": "3c4e22addfe8c2293e56a306e7e07d306276ad432df2cd8001da656e7ac781db",
+        "sha256": "3c4e22addfe8c2293e56a306e7e07d306276ad432df2cd8001da656e7ac781db",
+        "byteExact": true,
+        "matches": true,
+        "comparison": "exact bytes"
+      },
+      {
+        "path": "assets/table/felt.svg",
+        "status": 200,
+        "mime": "image/svg+xml",
+        "localSHA256": "94e28976b2ec75a4d6a72590cc46aa2c41fb44a4f4d9e19b8895f15eddcfb195",
+        "sha256": "94e28976b2ec75a4d6a72590cc46aa2c41fb44a4f4d9e19b8895f15eddcfb195",
+        "byteExact": true,
+        "matches": true,
+        "comparison": "exact bytes"
+      },
+      {
+        "path": "assets/table/riichi-stick.svg",
+        "status": 200,
+        "mime": "image/svg+xml",
+        "localSHA256": "f963e431a9cc612e005de43d7e7b45c6a96ae49e7fef841f4e056d8b2eb67eae",
+        "sha256": "f963e431a9cc612e005de43d7e7b45c6a96ae49e7fef841f4e056d8b2eb67eae",
+        "byteExact": true,
+        "matches": true,
+        "comparison": "exact bytes"
+      },
+      {
+        "path": "assets/table/tile-back.svg",
+        "status": 200,
+        "mime": "image/svg+xml",
+        "localSHA256": "717438f66925e1de4156233468c0dee6cfeac9f48c85c8507a32e10f37174ff6",
+        "sha256": "717438f66925e1de4156233468c0dee6cfeac9f48c85c8507a32e10f37174ff6",
+        "byteExact": true,
+        "matches": true,
+        "comparison": "exact bytes"
+      },
+      {
+        "path": "assets/tiles/00.svg",
+        "status": 200,
+        "mime": "image/svg+xml",
+        "localSHA256": "855998b9aa47fb5b5400bcbb4e3d0dd0d3cbe07761a02d29adc5004ca0f60f6d",
+        "sha256": "855998b9aa47fb5b5400bcbb4e3d0dd0d3cbe07761a02d29adc5004ca0f60f6d",
+        "byteExact": true,
+        "matches": true,
+        "comparison": "exact bytes"
+      },
+      {
+        "path": "assets/tiles/01.svg",
+        "status": 200,
+        "mime": "image/svg+xml",
+        "localSHA256": "7f6fb0c18527909cbd11ae75571e1e7ac033c5436c151b53d288ad6bcb9435ed",
+        "sha256": "7f6fb0c18527909cbd11ae75571e1e7ac033c5436c151b53d288ad6bcb9435ed",
+        "byteExact": true,
+        "matches": true,
+        "comparison": "exact bytes"
+      },
+      {
+        "path": "assets/tiles/02.svg",
+        "status": 200,
+        "mime": "image/svg+xml",
+        "localSHA256": "a2eccc45eea7d5955225c7d3dd2d43743f467b859940329cc360cadccc22673a",
+        "sha256": "a2eccc45eea7d5955225c7d3dd2d43743f467b859940329cc360cadccc22673a",
+        "byteExact": true,
+        "matches": true,
+        "comparison": "exact bytes"
+      },
+      {
+        "path": "assets/tiles/03.svg",
+        "status": 200,
+        "mime": "image/svg+xml",
+        "localSHA256": "b89bf828ef60e2ca9dc8b9f626c9db65b96491041e4f2021753f9512d112be93",
+        "sha256": "b89bf828ef60e2ca9dc8b9f626c9db65b96491041e4f2021753f9512d112be93",
+        "byteExact": true,
+        "matches": true,
+        "comparison": "exact bytes"
+      },
+      {
+        "path": "assets/tiles/04.svg",
+        "status": 200,
+        "mime": "image/svg+xml",
+        "localSHA256": "24c776e1817a8dd0fa7a51e38e047933b53574b6caa32ef6b1f46c385b9d84ba",
+        "sha256": "24c776e1817a8dd0fa7a51e38e047933b53574b6caa32ef6b1f46c385b9d84ba",
+        "byteExact": true,
+        "matches": true,
+        "comparison": "exact bytes"
+      },
+      {
+        "path": "assets/tiles/05.svg",
+        "status": 200,
+        "mime": "image/svg+xml",
+        "localSHA256": "4b230f44df44a6252508d35bfbfebe6425b132776c557959c64e62e50ed58eee",
+        "sha256": "4b230f44df44a6252508d35bfbfebe6425b132776c557959c64e62e50ed58eee",
+        "byteExact": true,
+        "matches": true,
+        "comparison": "exact bytes"
+      },
+      {
+        "path": "assets/tiles/06.svg",
+        "status": 200,
+        "mime": "image/svg+xml",
+        "localSHA256": "3ced0f2a976aaa9a50dd02ccb880ece3fff133e584e2b6866ba9d6d8a533f137",
+        "sha256": "3ced0f2a976aaa9a50dd02ccb880ece3fff133e584e2b6866ba9d6d8a533f137",
+        "byteExact": true,
+        "matches": true,
+        "comparison": "exact bytes"
+      },
+      {
+        "path": "assets/tiles/07.svg",
+        "status": 200,
+        "mime": "image/svg+xml",
+        "localSHA256": "ff37e643e83605590522577484c0a68c01fda85a8e0577f5949d86ff86075338",
+        "sha256": "ff37e643e83605590522577484c0a68c01fda85a8e0577f5949d86ff86075338",
+        "byteExact": true,
+        "matches": true,
+        "comparison": "exact bytes"
+      },
+      {
+        "path": "assets/tiles/08.svg",
+        "status": 200,
+        "mime": "image/svg+xml",
+        "localSHA256": "01a6dabe93395b4ab54b381e639021852af28dcbf6ac03df9eaca9b352cb34f4",
+        "sha256": "01a6dabe93395b4ab54b381e639021852af28dcbf6ac03df9eaca9b352cb34f4",
+        "byteExact": true,
+        "matches": true,
+        "comparison": "exact bytes"
+      },
+      {
+        "path": "assets/tiles/09.svg",
+        "status": 200,
+        "mime": "image/svg+xml",
+        "localSHA256": "c62d47b74e323b6ca221b3fccb818ef9be93913b506398074f5e2dc6bb069b79",
+        "sha256": "c62d47b74e323b6ca221b3fccb818ef9be93913b506398074f5e2dc6bb069b79",
+        "byteExact": true,
+        "matches": true,
+        "comparison": "exact bytes"
+      },
+      {
+        "path": "assets/tiles/10.svg",
+        "status": 200,
+        "mime": "image/svg+xml",
+        "localSHA256": "8eff0802a9d3821fb8f726796005024494f5d28ff895ad2c8a0c8156e3c6a3c9",
+        "sha256": "8eff0802a9d3821fb8f726796005024494f5d28ff895ad2c8a0c8156e3c6a3c9",
+        "byteExact": true,
+        "matches": true,
+        "comparison": "exact bytes"
+      },
+      {
+        "path": "assets/tiles/11.svg",
+        "status": 200,
+        "mime": "image/svg+xml",
+        "localSHA256": "5c68e74bceaee4c07d3876af9bad812f3bec45638f6d750ad0905d520d795bfd",
+        "sha256": "5c68e74bceaee4c07d3876af9bad812f3bec45638f6d750ad0905d520d795bfd",
+        "byteExact": true,
+        "matches": true,
+        "comparison": "exact bytes"
+      },
+      {
+        "path": "assets/tiles/12.svg",
+        "status": 200,
+        "mime": "image/svg+xml",
+        "localSHA256": "b9303dc7f348a0f6740bd089c8b8fd666fba0909a8eb7a14fc4816ac83dbd553",
+        "sha256": "b9303dc7f348a0f6740bd089c8b8fd666fba0909a8eb7a14fc4816ac83dbd553",
+        "byteExact": true,
+        "matches": true,
+        "comparison": "exact bytes"
+      },
+      {
+        "path": "assets/tiles/13.svg",
+        "status": 200,
+        "mime": "image/svg+xml",
+        "localSHA256": "c814298333be769bcdb5fa85a0527e2d85adb0f9a8c161ede368d17d4d54c893",
+        "sha256": "c814298333be769bcdb5fa85a0527e2d85adb0f9a8c161ede368d17d4d54c893",
+        "byteExact": true,
+        "matches": true,
+        "comparison": "exact bytes"
+      },
+      {
+        "path": "assets/tiles/14.svg",
+        "status": 200,
+        "mime": "image/svg+xml",
+        "localSHA256": "98128fffa08e30e091a1c15716bbc20e3955ba7840290eb3045ac417401426d6",
+        "sha256": "98128fffa08e30e091a1c15716bbc20e3955ba7840290eb3045ac417401426d6",
+        "byteExact": true,
+        "matches": true,
+        "comparison": "exact bytes"
+      },
+      {
+        "path": "assets/tiles/15.svg",
+        "status": 200,
+        "mime": "image/svg+xml",
+        "localSHA256": "28dae4332b503ec1506c2e8ffdd75a7bee078a987c4dc6806f96f85de151d3cc",
+        "sha256": "28dae4332b503ec1506c2e8ffdd75a7bee078a987c4dc6806f96f85de151d3cc",
+        "byteExact": true,
+        "matches": true,
+        "comparison": "exact bytes"
+      },
+      {
+        "path": "assets/tiles/16.svg",
+        "status": 200,
+        "mime": "image/svg+xml",
+        "localSHA256": "97a3f20d14efc7060bb0098ce16896fe017e3fe33c46ca7d0aeb9c098838cb8d",
+        "sha256": "97a3f20d14efc7060bb0098ce16896fe017e3fe33c46ca7d0aeb9c098838cb8d",
+        "byteExact": true,
+        "matches": true,
+        "comparison": "exact bytes"
+      },
+      {
+        "path": "assets/tiles/17.svg",
+        "status": 200,
+        "mime": "image/svg+xml",
+        "localSHA256": "5a41b615a6bee9dba026a6e41d9e504eda3eebd7dd6d2f0c0dfe2a8ff5b9c575",
+        "sha256": "5a41b615a6bee9dba026a6e41d9e504eda3eebd7dd6d2f0c0dfe2a8ff5b9c575",
+        "byteExact": true,
+        "matches": true,
+        "comparison": "exact bytes"
+      },
+      {
+        "path": "assets/tiles/18.svg",
+        "status": 200,
+        "mime": "image/svg+xml",
+        "localSHA256": "526e0590c875736fd98c696c7f0ad83498feb2129c378624ec1623d4fc1fc648",
+        "sha256": "526e0590c875736fd98c696c7f0ad83498feb2129c378624ec1623d4fc1fc648",
+        "byteExact": true,
+        "matches": true,
+        "comparison": "exact bytes"
+      },
+      {
+        "path": "assets/tiles/19.svg",
+        "status": 200,
+        "mime": "image/svg+xml",
+        "localSHA256": "556650f1b5deeae10a773fd65c89f5991e1351f08aa138e4d1ea09a3ff439b12",
+        "sha256": "556650f1b5deeae10a773fd65c89f5991e1351f08aa138e4d1ea09a3ff439b12",
+        "byteExact": true,
+        "matches": true,
+        "comparison": "exact bytes"
+      },
+      {
+        "path": "assets/tiles/20.svg",
+        "status": 200,
+        "mime": "image/svg+xml",
+        "localSHA256": "87963eb52ee3e93e181fd83f85af14887f76c81f21908d980a5ad6575d2e8646",
+        "sha256": "87963eb52ee3e93e181fd83f85af14887f76c81f21908d980a5ad6575d2e8646",
+        "byteExact": true,
+        "matches": true,
+        "comparison": "exact bytes"
+      },
+      {
+        "path": "assets/tiles/21.svg",
+        "status": 200,
+        "mime": "image/svg+xml",
+        "localSHA256": "b0bc4b43a337f19cd0fd39a1f67bec2323e5bcca75d18d108781a67cc1e94cbf",
+        "sha256": "b0bc4b43a337f19cd0fd39a1f67bec2323e5bcca75d18d108781a67cc1e94cbf",
+        "byteExact": true,
+        "matches": true,
+        "comparison": "exact bytes"
+      },
+      {
+        "path": "assets/tiles/22.svg",
+        "status": 200,
+        "mime": "image/svg+xml",
+        "localSHA256": "32edb7ca296ba758f2918aa0ce391de0fc86c9ade26d2bcf752bb7c0c244ae32",
+        "sha256": "32edb7ca296ba758f2918aa0ce391de0fc86c9ade26d2bcf752bb7c0c244ae32",
+        "byteExact": true,
+        "matches": true,
+        "comparison": "exact bytes"
+      },
+      {
+        "path": "assets/tiles/23.svg",
+        "status": 200,
+        "mime": "image/svg+xml",
+        "localSHA256": "1296e59ba5872633971421e6defb17af931eb309049253691325f97b6a6ceaf3",
+        "sha256": "1296e59ba5872633971421e6defb17af931eb309049253691325f97b6a6ceaf3",
+        "byteExact": true,
+        "matches": true,
+        "comparison": "exact bytes"
+      },
+      {
+        "path": "assets/tiles/24.svg",
+        "status": 200,
+        "mime": "image/svg+xml",
+        "localSHA256": "a983f94a87a67b8b43415d001a78396816734244b84f0837c6ef415b687396ac",
+        "sha256": "a983f94a87a67b8b43415d001a78396816734244b84f0837c6ef415b687396ac",
+        "byteExact": true,
+        "matches": true,
+        "comparison": "exact bytes"
+      },
+      {
+        "path": "assets/tiles/25.svg",
+        "status": 200,
+        "mime": "image/svg+xml",
+        "localSHA256": "e0733ff8712bdf84c232246a6db8286934e1d1f0d0a227d5840ef6a980998e62",
+        "sha256": "e0733ff8712bdf84c232246a6db8286934e1d1f0d0a227d5840ef6a980998e62",
+        "byteExact": true,
+        "matches": true,
+        "comparison": "exact bytes"
+      },
+      {
+        "path": "assets/tiles/26.svg",
+        "status": 200,
+        "mime": "image/svg+xml",
+        "localSHA256": "f3fe0944c5e289107d1eb5773b4524d5e9660dbd8b8f092176fe6721ef907820",
+        "sha256": "f3fe0944c5e289107d1eb5773b4524d5e9660dbd8b8f092176fe6721ef907820",
+        "byteExact": true,
+        "matches": true,
+        "comparison": "exact bytes"
+      },
+      {
+        "path": "assets/tiles/27.svg",
+        "status": 200,
+        "mime": "image/svg+xml",
+        "localSHA256": "8a645d1d1453f0c0c2451e95039d7796692ca49145c88fbfb502a0c6f6ec370d",
+        "sha256": "8a645d1d1453f0c0c2451e95039d7796692ca49145c88fbfb502a0c6f6ec370d",
+        "byteExact": true,
+        "matches": true,
+        "comparison": "exact bytes"
+      },
+      {
+        "path": "assets/tiles/28.svg",
+        "status": 200,
+        "mime": "image/svg+xml",
+        "localSHA256": "91062bbac0c2d0b6f9bf747b1921e0b3cd4233a38f7a6fc84d68be0358954a23",
+        "sha256": "91062bbac0c2d0b6f9bf747b1921e0b3cd4233a38f7a6fc84d68be0358954a23",
+        "byteExact": true,
+        "matches": true,
+        "comparison": "exact bytes"
+      },
+      {
+        "path": "assets/tiles/29.svg",
+        "status": 200,
+        "mime": "image/svg+xml",
+        "localSHA256": "159e5ac31821295e754b53ee48ef70b616a5fc9129da91294a2f22b2d04b551d",
+        "sha256": "159e5ac31821295e754b53ee48ef70b616a5fc9129da91294a2f22b2d04b551d",
+        "byteExact": true,
+        "matches": true,
+        "comparison": "exact bytes"
+      },
+      {
+        "path": "assets/tiles/30.svg",
+        "status": 200,
+        "mime": "image/svg+xml",
+        "localSHA256": "ddafded4d4bea868f53be926693cb7a81b4967f82ed9ff45aa800408a253f44b",
+        "sha256": "ddafded4d4bea868f53be926693cb7a81b4967f82ed9ff45aa800408a253f44b",
+        "byteExact": true,
+        "matches": true,
+        "comparison": "exact bytes"
+      },
+      {
+        "path": "assets/tiles/31.svg",
+        "status": 200,
+        "mime": "image/svg+xml",
+        "localSHA256": "7ae606f0e0f9e71ebe563fb72c5e913d471c409c878fe093c8cdf158721d985d",
+        "sha256": "7ae606f0e0f9e71ebe563fb72c5e913d471c409c878fe093c8cdf158721d985d",
+        "byteExact": true,
+        "matches": true,
+        "comparison": "exact bytes"
+      },
+      {
+        "path": "assets/tiles/32.svg",
+        "status": 200,
+        "mime": "image/svg+xml",
+        "localSHA256": "d2de1c59306906e467b911515e5635f94963d078a156a7f9d131d89ad4384633",
+        "sha256": "d2de1c59306906e467b911515e5635f94963d078a156a7f9d131d89ad4384633",
+        "byteExact": true,
+        "matches": true,
+        "comparison": "exact bytes"
+      },
+      {
+        "path": "assets/tiles/33.svg",
+        "status": 200,
+        "mime": "image/svg+xml",
+        "localSHA256": "12fb344a175585edb4e9ff63facf2dbd838a3875bb224badbee19eb4b4894361",
+        "sha256": "12fb344a175585edb4e9ff63facf2dbd838a3875bb224badbee19eb4b4894361",
+        "byteExact": true,
+        "matches": true,
+        "comparison": "exact bytes"
+      },
+      {
+        "path": "assets/tiles/red-16.svg",
+        "status": 200,
+        "mime": "image/svg+xml",
+        "localSHA256": "8e063ccc4969762ea48a3dd05ca1cb433dc4ab02bb82b8d7366a6429b028b7c5",
+        "sha256": "8e063ccc4969762ea48a3dd05ca1cb433dc4ab02bb82b8d7366a6429b028b7c5",
+        "byteExact": true,
+        "matches": true,
+        "comparison": "exact bytes"
+      },
+      {
+        "path": "assets/tiles/red-52.svg",
+        "status": 200,
+        "mime": "image/svg+xml",
+        "localSHA256": "a3cebed49e6da5bf522a9e28d7c9c86071ff3dfbff2f4efde353175cd6c8fd29",
+        "sha256": "a3cebed49e6da5bf522a9e28d7c9c86071ff3dfbff2f4efde353175cd6c8fd29",
+        "byteExact": true,
+        "matches": true,
+        "comparison": "exact bytes"
+      },
+      {
+        "path": "assets/tiles/red-88.svg",
+        "status": 200,
+        "mime": "image/svg+xml",
+        "localSHA256": "6acdab6f4d5c575a7955d86ca8681a3c820bde01787367ab629232667ece54a4",
+        "sha256": "6acdab6f4d5c575a7955d86ca8681a3c820bde01787367ab629232667ece54a4",
+        "byteExact": true,
+        "matches": true,
+        "comparison": "exact bytes"
+      }
+    ]
+  },
+  "limitations": [
+    "Real mobile hardware and Safari not verified",
+    "Character voices not produced"
+  ],
+  "comparisonNote": "88 files match exact bytes. index.html and assets/manifest.json match after CRLF/LF normalization between Windows and Linux."
+}

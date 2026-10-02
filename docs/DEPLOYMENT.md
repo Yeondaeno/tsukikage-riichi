@@ -1,10 +1,16 @@
-# GitHub Pages 배포
+# GitHub Pages 배포 완료
 
-이 저장소의 main 변경은 GitHub Actions에서 규칙 검사와 정적 빌드를 수행한 뒤 GitHub Pages로 배포합니다. 실행 파일은 dist/index.html과 assets이며, 이미지 생성 서비스나 계정 인증은 게임 실행에 필요하지 않습니다.
+- [게임 플레이](https://yeondaeno.github.io/tsukikage-riichi/)
+- [GitHub 저장소](https://github.com/Yeondaeno/tsukikage-riichi)
+- [성공한 테스트·배포 실행](https://github.com/Yeondaeno/tsukikage-riichi/actions/runs/36965939451)
+- [배포 후 실제 검수 기록](deployment-verification.json)
 
-초기 배포의 완료 여부와 실제 접속 주소는 저장소의 Actions 및 github-pages 환경에서 확인할 수 있습니다. 현재 로컬 검수 결과 TEST_REPORT.md는 배포 전의 검수 기록이며, 배포 후 검수 증거는 docs/deployment-verification.json에 별도 기록합니다.
+소스·캐릭터 제작 원본·게임용 소재·테스트·설명서를 공개 저장소에 업로드했습니다. 배포한 게임 커밋은 4aaeda73728d7f93823f79ab06c7d475a6dc8935입니다.
 
-일반 수정은 src 및 assets를 수정하고 main에 반영합니다. .github/workflows/pages.yml이 테스트·빌드·배포를 이어서 처리합니다. 자동으로 만들어진 dist는 Git에 올리지 않습니다.
+배포 서버에서 npm test와 정적 빌드·Pages 배포가 성공했습니다. 공개 주소에서 실제 시작 버튼, 첫 클릭 선택·900ms 뒤 재클릭 버림, 캐릭터 이미지40개, 효과음7개, 공개 정보 스냅샷, 가로844×390 화면, 컷인 건너뛰기 등 9개 검사를 통과했습니다.
 
-캐릭터 음성은 미제작이며, 실물 모바일와 Safari 검수 범위는 기존 TEST_REPORT.md의 구분을 유지합니다.
+배포 파일90개 모두 HTTP200으로 응답하고 내용이 검수한 빌드와 일치합니다. 그중88개는 바이트까지 동일하고, HTML·소재 목록JSON은 Windows/Linux의 CRLF/LF 줄바꿈 차이를 제외한 내용이 동일합니다. 원시 해시와 비교 방식도 기록했습니다.
 
+일반 수정은 src 및 assets를 수정하고 main에 반영합니다. .github/workflows/pages.yml이 검사·빌드·배포를 이어서 처리합니다. 자동으로 만들어진 dist는 Git에 올리지 않습니다. 배포 후 결과 기록만 추가한 문서 커밋은 게임을 변경하지 않으므로 배포를 반복하지 않았습니다.
+
+캐릭터 음성은 미제작이고, 실물 모바일·Safari는 미검증입니다. TEST_REPORT.md는 배포 전 로컬 검사 기록이며 이 문서와 JSON이 배포 후 검사를 보충합니다.
