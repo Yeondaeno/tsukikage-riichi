@@ -1,12 +1,12 @@
 {
-  "verifiedAt": "2026-10-02T13:48:14+0900",
+  "verifiedAt": "2026-10-02T14:56:58.962922+09:00",
   "repository": "https://github.com/Yeondaeno/tsukikage-riichi",
   "site": "https://yeondaeno.github.io/tsukikage-riichi/",
-  "deployedCommit": "4aaeda73728d7f93823f79ab06c7d475a6dc8935",
-  "workflowRun": "https://github.com/Yeondaeno/tsukikage-riichi/actions/runs/36965939451",
+  "deployedCommit": "87cf180398586e0411a389d146b6de1e4a6bf311",
+  "workflowRun": "https://github.com/Yeondaeno/tsukikage-riichi/actions/runs/36970693777",
   "workflowResult": "success",
   "browser": {
-    "runAt": "2026-10-02T13:48:14+0900",
+    "runAt": "2026-10-02T14:51:38+0900",
     "url": "https://yeondaeno.github.io/tsukikage-riichi/",
     "environment": "Windows isolated Chromium; mobile size and touch emulated",
     "checks": [
@@ -17,6 +17,11 @@
       },
       {
         "name": "native start opens one human plus three CPUs",
+        "passed": true,
+        "details": null
+      },
+      {
+        "name": "hosted perspective table and flat hand/drop load",
         "passed": true,
         "details": null
       },
@@ -250,41 +255,11 @@
     ]
   },
   "http": {
-    "runAt": "2026-10-02T13:50:27+0900",
+    "runAt": "2026-10-02T14:56:58.962922+09:00",
     "url": "https://yeondaeno.github.io/tsukikage-riichi/",
     "files": 90,
     "allMatch": true,
     "results": [
-      {
-        "path": "index.html",
-        "status": 200,
-        "mime": "text/html; charset=utf-8",
-        "localSHA256": "f010532f57bc477029b0b9caf322775ed194f5cd9135f2a87aa6c247996ba20a",
-        "sha256": "00cca3d1acd58f3ead7bb72e035d54ce4e3c78585362fa35cbd6566ee735dea5",
-        "byteExact": false,
-        "matches": true,
-        "comparison": "CRLF/LF normalization"
-      },
-      {
-        "path": "assets/manifest.json",
-        "status": 200,
-        "mime": "application/json; charset=utf-8",
-        "localSHA256": "47e8d08219a255b79452ffeea549513ab5e0e4cdb532faf607918158b772567e",
-        "sha256": "c5490e848754324f0832e88a4275f354d508c7984e55254589f56d7cfc724654",
-        "byteExact": false,
-        "matches": true,
-        "comparison": "CRLF/LF normalization"
-      },
-      {
-        "path": "assets/README.md",
-        "status": 200,
-        "mime": "text/markdown; charset=utf-8",
-        "localSHA256": "041f1c91346fd0e06273002ee3d3d7bc7d699c465d365c12608e346c12df5190",
-        "sha256": "041f1c91346fd0e06273002ee3d3d7bc7d699c465d365c12608e346c12df5190",
-        "byteExact": true,
-        "matches": true,
-        "comparison": "exact bytes"
-      },
       {
         "path": "assets/audio/call.wav",
         "status": 200,
@@ -756,6 +731,26 @@
         "comparison": "exact bytes"
       },
       {
+        "path": "assets/manifest.json",
+        "status": 200,
+        "mime": "application/json; charset=utf-8",
+        "localSHA256": "726aaf9a4c2427d18c57374c84f125d2d2e24ac6c1c8a7e175cd55fe2056c95a",
+        "sha256": "01cca09cff6c3ad43aeed2f555d3a275680cc8d76f6eef89c87862ebc560d1f8",
+        "byteExact": false,
+        "matches": true,
+        "comparison": "CRLF/LF normalization"
+      },
+      {
+        "path": "assets/README.md",
+        "status": 200,
+        "mime": "text/markdown; charset=utf-8",
+        "localSHA256": "041f1c91346fd0e06273002ee3d3d7bc7d699c465d365c12608e346c12df5190",
+        "sha256": "041f1c91346fd0e06273002ee3d3d7bc7d699c465d365c12608e346c12df5190",
+        "byteExact": true,
+        "matches": true,
+        "comparison": "exact bytes"
+      },
+      {
         "path": "assets/table/felt.svg",
         "status": 200,
         "mime": "image/svg+xml",
@@ -1154,6 +1149,16 @@
         "byteExact": true,
         "matches": true,
         "comparison": "exact bytes"
+      },
+      {
+        "path": "index.html",
+        "status": 200,
+        "mime": "text/html; charset=utf-8",
+        "localSHA256": "649567ed869b14e15dc4ee87b2c8073ca4f1fd04c08ce08620e265e989c31b7b",
+        "sha256": "558d389e0fb7ee55f79312b381fceffba8062b4fbca654e67add30c0f6c78832",
+        "byteExact": false,
+        "matches": true,
+        "comparison": "CRLF/LF normalization"
       }
     ]
   },
