@@ -6,6 +6,8 @@
 
 ## 실행
 
+개발하려면 [개발 프로젝트 안내](docs/DEVELOPMENT.md)를 확인하세요. `npm ci` 후 `npm run dev`로 빌드와 로컬 서버를 실행할 수 있습니다. VS Code는 `tsukikage.code-workspace`, 개발 에이전트는 `AGENTS.md`를 사용합니다.
+
 배포 폴더의 `index.html`과 `assets`를 함께 두고 열면 됩니다. 브라우저의 파일 제약이 있으면 폴더에서 정적 서버를 실행하세요.
 
 ```powershell

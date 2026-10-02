@@ -5,6 +5,9 @@
   "description": "Offline four-player riichi mahjong: one human and three heuristic CPUs.",
   "main": "src/engine.js",
   "scripts": {
+    "build": "python build.py --output dist/index.html",
+    "serve": "python -m http.server 8000 --bind 127.0.0.1 --directory dist",
+    "dev": "npm run build && npm run serve",
     "build:vendor": "esbuild node_modules/three/build/three.module.js --bundle --format=iife --global-name=THREE --minify --legal-comments=inline --outfile=assets/vendor/three.min.js",
     "test": "node tests/unit.js && node tests/v3.js && node tests/simulation.js && node tests/matches.js",
     "test:unit": "node tests/unit.js",

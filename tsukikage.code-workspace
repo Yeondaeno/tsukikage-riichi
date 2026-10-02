@@ -1,0 +1,36 @@
+{
+  "folders": [{ "name": "월영마작", "path": "." }],
+  "settings": {
+    "files.encoding": "utf8",
+    "files.eol": "\n",
+    "files.exclude": { "**/__pycache__": true },
+    "search.exclude": { "**/node_modules": true, "**/dist": true, "**/tests/results": true }
+  },
+  "tasks": {
+    "version": "2.0.0",
+    "tasks": [
+      {
+        "label": "월영마작: 개발 서버",
+        "type": "npm",
+        "script": "dev",
+        "isBackground": true,
+        "problemMatcher": [],
+        "presentation": { "reveal": "always", "panel": "dedicated" }
+      },
+      {
+        "label": "월영마작: 빌드",
+        "type": "npm",
+        "script": "build",
+        "group": { "kind": "build", "isDefault": true },
+        "problemMatcher": []
+      },
+      {
+        "label": "월영마작: 전체 테스트",
+        "type": "npm",
+        "script": "test",
+        "group": { "kind": "test", "isDefault": true },
+        "problemMatcher": []
+      }
+    ]
+  }
+}
